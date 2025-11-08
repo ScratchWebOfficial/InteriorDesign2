@@ -1,0 +1,368 @@
+.about-container {
+  width: 100%;
+  height: 100vh; /* Full page height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.4); /* Slight dark overlay */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.breadcrumb {
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.breadcrumb .active {
+  font-weight: 600;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+  .breadcrumb {
+    font-size: 0.9rem;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* ============================= */
+/* HERO / BANNER SECTION         */
+/* ============================= */
+
+.about-container {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.breadcrumb {
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.breadcrumb .active {
+  font-weight: 600;
+  color: #fff;
+}
+
+/* ============================= */
+/* COMPANY OVERVIEW SECTION      */
+/* ============================= */
+
+.company-overview {
+  width: 100%;
+  background: #f7f7f7;
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.overview-small {
+  color: #e12626;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.overview-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.overview-text {
+  color: #666;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+/* ============================= */
+/* RESPONSIVE STYLES             */
+/* ============================= */
+
+@media (max-width: 900px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.9rem;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .overview-title {
+    font-size: 28px;
+  }
+
+  .overview-text {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
+/* ============================= */
+/* STORY SECTION (NEW)           */
+/* ============================= */
+
+.story-section {
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  padding: 80px 10%;
+  color: #333;
+}
+
+.story-subtitle {
+  color: #d72027;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.story-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.story-title span {
+  color: #d72027;
+}
+
+.story-quote {
+  font-style: italic;
+  font-size: 18px;
+  color: #666;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  line-height: 1.7;
+}
+
+.story-text {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.9;
+  max-width: 950px;
+  margin: 20px auto;
+  text-align: justify;
+}
+
+.story-text strong {
+  color: #222;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .story-title {
+    font-size: 26px;
+  }
+
+  .story-text {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .story-quote {
+    font-size: 16px;
+  }
+}
+/* ============================= */
+/* STATS SECTION (NEW)           */
+/* ============================= */
+
+.stats-section {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 80px 10%;
+  border-top: 1px solid #eee;
+}
+
+.stat-item {
+  flex: 1;
+  margin: 10px;
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.stat-text {
+  font-size: 18px;
+  color: #555;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 900px) {
+  .stats-section {
+    flex-direction: column;
+    padding: 60px 20px;
+  }
+
+  .stat-item {
+    margin: 25px 0;
+  }
+
+  .stat-number {
+    font-size: 40px;
+  }
+
+  .stat-text {
+    font-size: 16px;
+  }
+}
+
+
+/* ============================= */
+/* TEAM SECTION (NEW)            */
+/* ============================= */
+
+.team-section {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.team-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.team-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.team-subtitle {
+  font-size: 30px;
+  color: #555;
+  font-weight: 600;
+}
+
+.team-grid {
+  flex: 1.3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  min-width: 300px;
+}
+
+.team-img {
+  width: 100%;
+  max-width: 100px;
+  height: 100px;
+  border-radius: 6px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Responsive */
+@media (max-width: 900px) {
+  .team-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 8px;
+  }
+
+  .team-title {
+    font-size: 28px;
+  }
+
+  .team-subtitle {
+    font-size: 22px;
+  }
+}

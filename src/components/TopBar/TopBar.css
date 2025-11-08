@@ -1,0 +1,140 @@
+.top-bar {
+  width: 100%;
+  background: #222; /* Darker premium black */
+  color: #dcdcdc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 25px;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.top-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.top-icon {
+  color: #ff3b3b;
+  font-size: 18px;
+  margin-right: 6px;
+}
+
+.separator {
+  margin: 0 5px;
+  color: #777;
+}
+
+/* RIGHT SIDE (ICONS) */
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 18px;
+}
+
+/* ✅ WhatsApp moved LEFT inside icon row */
+.top-right svg {
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: #cfcfcf;
+}
+
+.top-right svg:hover {
+  color: #ff3b3b;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 900px) {
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    padding: 10px 12px;
+  }
+
+  .top-right {
+    gap: 14px;
+    font-size: 16px;
+  }
+}
+
+
+.top-bar {
+  width: 100%;
+  background: #222; /* Dark black */
+  color: #dcdcdc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 25px;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+/* LEFT TEXT */
+.top-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.top-icon {
+  color: #ff3b3b;
+  font-size: 18px;
+  margin-right: 6px;
+}
+
+.separator {
+  margin: 0 5px;
+  color: #777;
+}
+
+/* ✅ ICONS → SHIFTED LEFT */
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  /* ✅ Move icons LEFT instead of far right */
+  margin-left: 20px;
+}
+
+.top-right svg {
+  cursor: pointer;
+  transition: 0.25s ease;
+  color: #e0e0e0;
+  font-size: 18px;
+}
+
+/* ✅ Hover effect */
+.top-right svg:hover {
+  color: #ff3b3b;
+}
+
+/* ✅ RESPONSIVE FIX — Make icons always visible */
+@media (max-width: 900px) {
+
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .top-right {
+    justify-content: center;
+    margin-left: 0; /* Center icons */
+  }
+}
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #000;
+}
+
