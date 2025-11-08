@@ -33,7 +33,7 @@ const About = () => {
           DESIGNERS AIMING CLIENT'S SATISFACTION
         </h1>
         <p className="overview-text">
-          InteriorDesignWala is at your service if you want to give your home
+          Sacarah Global is at your service if you want to give your home
           interiors a fresh and elegant look without spending huge fortune.
           Whether you want to change interiors a bit or have plans for complete
           interior designing, InteriorDesignWala is the most personalized and
@@ -60,7 +60,7 @@ const About = () => {
         </p>
 
         <p className="story-text">
-          <strong>InteriorDesignWala.com</strong> is the organization founded in
+          <strong>fitnfixsolutions.com</strong> is the organization founded in
           the year 2012 by a young entrepreneur who kept an idea of decorating
           and styling each & every corner before his eyes, having lots of
           courage and obsession with the idea he formed an effective team of
@@ -101,7 +101,7 @@ const About = () => {
         </p>
 
         <p className="story-text">
-          InteriorDesignWala was founded with an aim to provide a better
+          Sacahar Global was founded with an aim to provide a better
           interior designing environment with the best designs to all of its
           reputed clients. Since our inception in the marketplace, we have been
           offering more premium & economic modern Interior designing & Turnkey
@@ -110,7 +110,7 @@ const About = () => {
         </p>
 
         <p className="story-text">
-          At InteriorDesignWala, quality and consistency come first. We give
+          At Sacahar Global, quality and consistency come first. We give
           your home an elegant and aesthetic look as desired without
           compromising quality. We create living-worthy living spaces that truly
           reflect your tastes, needs, and lifestyle. Over a decade, our turnkey
@@ -119,7 +119,7 @@ const About = () => {
         </p>
 
         <p className="story-text">
-          At InteriorDesignWala, we live our mission to create smooth, aesthetic
+          At Sacahar Global, we live our mission to create smooth, aesthetic
           & functional designs for spaces that matter to you. Our competent team
           of interior designers has required design skill & intelligence to turn
           your ordinary space into an extraordinary one. Our unmatched interior
