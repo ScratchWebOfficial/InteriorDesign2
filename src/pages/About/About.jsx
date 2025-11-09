@@ -12,7 +12,7 @@ import team5 from "../../assets/team5.jpg";
 const About = () => {
   return (
     <>
-      {/* ✅ Banner Section */}
+      {/*  Banner Section */}
       <div
         className="about-container"
         style={{ backgroundImage: `url(${aboutBg})` }}
@@ -26,7 +26,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* ✅ Company Overview Section */}
+      {/*  Company Overview Section */}
       <section className="company-overview">
         <h3 className="overview-small">COMPANY OVERVIEW</h3>
         <h1 className="overview-title">
@@ -47,7 +47,7 @@ const About = () => {
         </p>
       </section>
 
-      {/* ✅ The Story Section */}
+      {/*  The Story Section */}
       <section className="story-section">
         <h4 className="story-subtitle">HOW IT’S STARTED</h4>
         <h1 className="story-title">
@@ -82,7 +82,7 @@ const About = () => {
         </p>
 
         <p className="story-text">
-          Afterward, InteriorDesignWala.com got into Designing as well as
+          Afterward, Sahacarah Global got into Designing as well as
           execution work, for Delhi NCR people, we have plenty of projects
           running in NCR Region and a lot of them got completed as well. We have
           gotten into execution after establishing all the support team which is
@@ -101,7 +101,7 @@ const About = () => {
         </p>
 
         <p className="story-text">
-          Sacahar Global was founded with an aim to provide a better
+          Sahacarah Global was founded with an aim to provide a better
           interior designing environment with the best designs to all of its
           reputed clients. Since our inception in the marketplace, we have been
           offering more premium & economic modern Interior designing & Turnkey
@@ -110,7 +110,7 @@ const About = () => {
         </p>
 
         <p className="story-text">
-          At Sacahar Global, quality and consistency come first. We give
+          At Sahacarah Global, quality and consistency come first. We give
           your home an elegant and aesthetic look as desired without
           compromising quality. We create living-worthy living spaces that truly
           reflect your tastes, needs, and lifestyle. Over a decade, our turnkey
@@ -119,7 +119,7 @@ const About = () => {
         </p>
 
         <p className="story-text">
-          At Sacahar Global, we live our mission to create smooth, aesthetic
+          At Sahacarah Global, we live our mission to create smooth, aesthetic
           & functional designs for spaces that matter to you. Our competent team
           of interior designers has required design skill & intelligence to turn
           your ordinary space into an extraordinary one. Our unmatched interior
@@ -131,7 +131,7 @@ const About = () => {
         </p>
       </section>
 
-      {/* ✅ Statistics Section */}
+      {/*  Statistics Section */}
       <section className="stats-section">
         <div className="stat-item">
           <h2 className="stat-number">5+</h2>
@@ -159,7 +159,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* ✅ Team Section */}
+      {/* Team Section */}
       <section
         className="team-section"
         style={{ backgroundImage: `url(${teamBg})` }}
