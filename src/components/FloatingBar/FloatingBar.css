@@ -149,3 +149,118 @@
   justify-content: center;   /* ✅ vertical center */
 }
 
+/* Floating container */
+.floating-container {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: #333;
+  border-radius: 12px 0 0 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+
+.floating-container.closed {
+  right: -80px;
+}
+
+.floating-container.open {
+  right: 0;
+}
+
+/* Arrow button */
+.floating-arrow {
+  position: fixed;
+  right: 0;
+  top: 45%;
+  background: #000;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.arrow-icon.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+/* Middle Section */
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #555;
+  padding: 20px;
+  position: relative;
+  height: 120px;
+  justify-content: flex-end;
+}
+
+/* Vertical text appears above the email icon */
+.vertical-text {
+  transform: rotate(-90deg);
+  transform-origin: center;
+  white-space: nowrap;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 40%; /* moves text above the icon */
+  left: 50%;
+  translate: -50% -50%;
+}
+
+/* Icons */
+.mail-icon {
+  font-size: 22px;
+  color: #fff;
+  margin-top: 65px; /* space between text and icon */
+}
+
+.whatsapp-section {
+  background: #25d366;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.whatsapp-icon {
+  font-size: 20px;
+  color: #fff;
+}
+
+.call-section {
+  background: #d32f2f;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.call-icon {
+  font-size: 16px;
+  color: #fff;
+}
+.mail-link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail-link:hover .mail-icon {
+  color: #ffcc00; /* Optional hover color */
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}

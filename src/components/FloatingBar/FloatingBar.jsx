@@ -15,14 +15,22 @@ const FloatingBar = () => {
         <FaArrowRight className={`arrow-icon ${open ? "" : "rotate"}`} />
       </div>
 
-      {/*  SIDEBAR */}
+      {/* SIDEBAR */}
       <div className={`floating-container ${open ? "open" : "closed"}`}>
-
+        {/* CONTACT SECTION */}
         <div className="middle-section">
-          <span className="vertical-text">Contact Us</span>
-          <FaEnvelope className="mail-icon" />
+          <div className="vertical-text">Contact Us</div>
+          <a
+            href="mailto:fitnfixsolutions@gmail.com"
+            className="mail-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaEnvelope className="mail-icon" />
+          </a>
         </div>
 
+        {/* WHATSAPP */}
         <a
           href="https://wa.me/919312739997"
           className="whatsapp-section"
@@ -32,6 +40,7 @@ const FloatingBar = () => {
           <FaWhatsapp className="whatsapp-icon" />
         </a>
 
+        {/* CALL */}
         <a href="tel:+919990155566" className="call-section">
           <FaPhoneAlt className="call-icon" />
         </a>

@@ -137,4 +137,12 @@
   z-index: 1000;
   background: #000;
 }
+.top-right a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.top-right a:hover {
+  color: #ff3b3b;
+}
 

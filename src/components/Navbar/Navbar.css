@@ -945,3 +945,46 @@
   background: #f9f9f9;
   color: #d72027;
 }
+/* ============================= */
+/* Links Section - Equal Spacing */
+/* ============================= */
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* ensures equal space between each item */
+  width: 100%;
+  max-width: 1100px; /* keeps layout neatly centered */
+  margin: 0 auto; /* centers nav links between logo and edge */
+}
+/* ============================= */
+/* FIX: Remove black box on click */
+/* ============================= */
+.nav-links a:focus,
+.dropdown-btn:focus,
+.dropdown-menu a:focus,
+.submenu a:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+/* ============================= */
+/* Navbar Links — Equal Spacing  */
+/* ============================= */
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center all links */
+  gap: 40px; /* ✅ perfect equal spacing between all items */
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.nav-links > * {
+  display: flex;
+  align-items: center;
+}
+.nav-links a,
+.nav-links .dropdown-btn {
+  margin: 0;
+  padding: 0;
+}
