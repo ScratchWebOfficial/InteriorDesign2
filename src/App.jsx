@@ -10,6 +10,7 @@ import About from "./pages/About/About";
 import Contact from "./components/Contact/Contact";
 import Blog from "./components/Blog/Blog";
 import Career from "./components/Career/Career";
+import OnlineDesign from "./components/Services/OnlineDesign";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
          <Route path="/blog" element={<Blog />} />
           <Route path="/career" element={<Career />} />
+          <Route path="/online-interior-designing" element={<OnlineDesign />} />
       </Routes>
     </Router>
   );

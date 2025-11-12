@@ -6,7 +6,7 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(null); // tracks which dropdown is open
   const [activeSubmenu, setActiveSubmenu] = useState(null); // tracks which submenu (for Recent Projects) is open
 
-  //  Close menus when clicking outside
+  // ✅ Close menus when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (!event.target.closest(".dropdown")) {
@@ -18,30 +18,30 @@ const Navbar = () => {
     return () => document.removeEventListener("click", handleClickOutside);
   }, []);
 
-  //  Toggle dropdowns
+  // ✅ Toggle dropdowns
   const toggleDropdown = (menu) => {
     setDropdownOpen(dropdownOpen === menu ? null : menu);
     setActiveSubmenu(null);
   };
 
-  //  Toggle submenus (for Recent Projects)
+  // ✅ Toggle submenus (for Recent Projects)
   const handleSubmenuToggle = (submenu) => {
     setActiveSubmenu(activeSubmenu === submenu ? null : submenu);
   };
 
   return (
     <nav className="navbar">
-      {/*  Logo */}
+      {/* ✅ Logo */}
       <div className="nav-left">
         <img src="/logo.png" alt="Logo" className="nav-logo" />
       </div>
 
-      {/*  Navbar Links */}
+      {/* ✅ Navbar Links */}
       <div className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/about">About Us</Link>
 
-        {/*  Recent Projects Dropdown */}
+        {/* ✅ Recent Projects Dropdown */}
         <div className="dropdown">
           <button
             className="dropdown-btn"
@@ -62,7 +62,9 @@ const Navbar = () => {
               >
                 <span className="submenu-label">
                   Online Designed{" "}
-                  <span className={`arrow ${activeSubmenu === "online" ? "up" : "down"}`}>
+                  <span
+                    className={`arrow ${activeSubmenu === "online" ? "up" : "down"}`}
+                  >
                     ▶
                   </span>
                 </span>
@@ -95,7 +97,11 @@ const Navbar = () => {
               >
                 <span className="submenu-label">
                   Designed And Executed{" "}
-                  <span className={`arrow ${activeSubmenu === "executed" ? "up" : "down"}`}>
+                  <span
+                    className={`arrow ${
+                      activeSubmenu === "executed" ? "up" : "down"
+                    }`}
+                  >
                     ▶
                   </span>
                 </span>
@@ -124,7 +130,7 @@ const Navbar = () => {
           )}
         </div>
 
-        {/*  Our Services Dropdown */}
+        {/* ✅ Our Services Dropdown */}
         <div className="dropdown">
           <button
             className="dropdown-btn"
@@ -138,14 +144,15 @@ const Navbar = () => {
 
           {dropdownOpen === "services" && (
             <div className="dropdown-menu">
-              <Link to="/services/online-interior">Online Interior Designing</Link>
-              <Link to="/services/turnkey">Turnkey Projects (Delhi-NCR)</Link>
-              <Link to="/services/rendering">3D Rendering Services</Link>
+              {/* ✅ Corrected routes for navigation */}
+              <Link to="/online-interior-designing">Online Interior Designing</Link>
+              <Link to="/turnkey-projects">Turnkey Projects (Delhi-NCR)</Link>
+              <Link to="/3d-rendering-services">3D Rendering Services</Link>
             </div>
           )}
         </div>
 
-        {/*  Portfolio Dropdown */}
+        {/* ✅ Portfolio Dropdown */}
         <div className="dropdown">
           <button
             className="dropdown-btn"
@@ -165,11 +172,11 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* Other Links */}
+        {/* ✅ Other Links */}
         <Link to="/blog">Blog</Link>
         <Link to="/contact">Contact</Link>
 
-        {/*  Login / Sign Up Buttons */}
+        {/* ✅ Login / Sign Up Buttons */}
         <Link to="/login">
           <button className="quote-btn login">Login</button>
         </Link>
