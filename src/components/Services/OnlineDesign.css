@@ -1052,3 +1052,292 @@ textarea {
     font-size: 16px;
   }
 }
+/* ======================================== */
+/* WHY US SECTION (People Choose Us For — Single Line) */
+/* ======================================== */
+
+.why-us-section {
+  background: #fff;
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.why-subtitle {
+  color: #e63946;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.why-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 60px;
+}
+
+/* ✅ All 6 cards in one single line (no scroll) */
+.why-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.why-card {
+  flex: 1;
+  min-width: 0;
+  height: 180px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.why-icon {
+  font-size: 45px;
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.why-card h4 {
+  font-size: 17px;
+  color: #333;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.why-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 40px 30px;
+  width: 220px;
+  text-align: center;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* keep overlay inside cleanly */
+  min-height: 280px; /* ensures enough height for full text */
+}
+
+.why-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* cover entire card */
+  background-color: #e63946;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+  box-sizing: border-box;
+}
+
+.why-overlay p {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Hover — show overlay fully */
+.why-card:hover .why-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.recent-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 cards in one line */
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  aspect-ratio: 16 / 9; /* rectangular shape */
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* image stays clean inside rectangle */
+  transition: transform 0.5s ease;
+}
+/* ✅ Base project card */
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ✅ Arrow button — top-left corner only */
+.project-btn {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.85);
+  color: #333;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* ✅ Button hover animation */
+.project-btn:hover {
+  background: #000;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* ✅ Text stays visible like before */
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.35); /* subtle overlay if you had before */
+  transition: all 0.3s ease;
+}
+
+/* keep text always visible, not fade in/out */
+.project-client,
+.project-title {
+  opacity: 1;
+  visibility: visible;
+  transition: none;
+}
+/* keep existing project-card styles as they are */
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ✅ Arrow styling (same as before, only moved top-left) */
+.project-overlay .project-btn {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #e63946;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* ✅ Hover effect same as before (red background + white arrow) */
+.project-overlay .project-btn:hover {
+  background-color: #e63946;
+  color: #fff;
+  transform: scale(1.1);
+}
+.project-overlay .project-btn {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #e63946;
+  border: none;
+  border-radius: 50%;
+  width: 55px;         /* bigger size */
+  height: 55px;        /* bigger size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;     /* larger arrow icon */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+/* ✅ same hover effect (red bg, white arrow) */
+.project-overlay .project-btn:hover {
+  background-color: #e63946;
+  color: #fff;
+  transform: scale(1.1);
+}
+/*  FIXED PROJECT ARROW CIRCLE */
+.project-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 10;
+
+  /* Circle Style */
+  background-color: #ffffff;       /* white circle */
+  border: 2px solid #e63946;       /* red border */
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+
+  /* Center the arrow perfectly */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Arrow Style */
+  color: #e63946;                  /* red arrow (visible on white) */
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+
+  /* Hover Transition */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*  Hover Effect */
+.project-btn:hover {
+  background-color: #e63946;       /* circle becomes red */
+  color: #fff;                     /* arrow turns white */
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
