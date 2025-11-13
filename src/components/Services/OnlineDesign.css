@@ -1341,3 +1341,148 @@ textarea {
   transform: scale(1.1);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
+/* ========================================= */
+/* FIXED PROJECT ARROW BUTTON (Improved Visibility) */
+/* ========================================= */
+
+.project-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 10;
+
+  /* Circle Button Design */
+  background-color: #ffffff;
+  border: 3px solid #e63946;
+  border-radius: 50%;
+  width: 65px; /* enlarged */
+  height: 65px;
+
+  /* Center the Arrow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Arrow Styling */
+  color: #e63946;
+  font-size: 30px; /* 🔥 increased arrow size */
+  font-weight: 800;
+  line-height: 1;
+
+  /* Shadow and Animation */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effect */
+.project-btn:hover {
+  background-color: #e63946;
+  color: #fff;
+  transform: scale(1.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .project-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 24px;
+  }
+}
+/* ----------------------------------------- */
+/* ELEGANT ARROW CIRCLE (MATCHES SCREENSHOT) */
+/* ----------------------------------------- */
+
+.project-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #fff;
+
+  /* clean border like screenshot */
+  border: 1px solid #d1d1d1;
+
+  /* center arrow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* arrow styling */
+  color: #6d6d6d;        /* soft grey arrow */
+  font-size: 35px;       /* large arrow */
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect – subtle smooth upscale */
+.project-btn:hover {
+  transform: scale(1.08);
+  border-color: #b5b5b5;
+  color: #000;           /* arrow darker on hover */
+}
+
+/* mobile responsive */
+@media (max-width: 768px) {
+  .project-btn {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+  }
+}
+/* ----------------------------------------- */
+/* PERFECT MATCH – ARROW CIRCLE UI          */
+/* ----------------------------------------- */
+
+.project-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 15;
+
+  width: 80px;
+  height: 80px;
+
+  background: #ffffff;
+  border-radius: 50%;
+
+  /* thin gray border like your screenshot */
+  border: 1px solid #e2e2e2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* arrow styling */
+  color: #6d6d6d;         /* soft gray arrow */
+  font-size: 32px;        /* optimal arrow size */
+  font-weight: 400;
+
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+/* Hover – very subtle scale (same as UI) */
+.project-btn:hover {
+  transform: scale(1.05);
+  border-color: #cfcfcf;
+  color: #4d4d4d;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .project-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+  }
+}
+
