@@ -64,6 +64,127 @@ const Blog = () => {
           </aside>
         </div>
       </section>
+
+          {/* 🧩 Blog Card Section */}
+      <section className="blog-card-section">
+      <div className="blog-card">
+        <img
+          src={blogMainImage}
+              alt="Main Blog"
+          className="blog-card-image"
+        />
+
+        <div className="blog-card-content">
+          <h2 className="blog-card-title">
+            7 Effective Do’s and Don’t’s of Making Pooja Room Designs in Homes
+          </h2>
+
+          <div className="blog-card-meta">
+            <span>
+              By <span className="author-name">Admin</span>
+            </span>
+            <span className="divider">|</span>
+            <span>On July 15, 2024 6:45 AM</span>
+            <span className="divider">|</span>
+            <span>In</span>
+          </div>
+
+          <p className="blog-card-text">
+            It’s not to describe the importance of a pooja room in any Indian house.
+            Our roots are so deeply connected with mythology and spirituality that
+            an Indian home is felt incomplete without a pooja room regardless of the
+            religion. That is why, at Interior Design Wala we pay close attention to
+            client briefs while making p...
+          </p>
+
+          <button className="blog-read-btn">
+            Read More <span className="arrow">➜</span>
+          </button>
+        </div>
+      </div>
+      </section>
+
+
+      {/* 🧩 Blog Card Section */}
+      <section className="blog-card-section">
+      <div className="blog-card">
+        <img
+          src={blogMainImage}
+              alt="Main Blog"
+          className="blog-card-image"
+        />
+
+        <div className="blog-card-content">
+          <h2 className="blog-card-title">
+            7 Effective Do’s and Don’t’s of Making Pooja Room Designs in Homes
+          </h2>
+
+          <div className="blog-card-meta">
+            <span>
+              By <span className="author-name">Admin</span>
+            </span>
+            <span className="divider">|</span>
+            <span>On July 15, 2024 6:45 AM</span>
+            <span className="divider">|</span>
+            <span>In</span>
+          </div>
+
+          <p className="blog-card-text">
+            It’s not to describe the importance of a pooja room in any Indian house.
+            Our roots are so deeply connected with mythology and spirituality that
+            an Indian home is felt incomplete without a pooja room regardless of the
+            religion. That is why, at Interior Design Wala we pay close attention to
+            client briefs while making p...
+          </p>
+
+          <button className="blog-read-btn">
+            Read More <span className="arrow">➜</span>
+          </button>
+        </div>
+      </div>
+      </section>
+
+
+
+      {/* 🧩 Blog Card Section */}
+      <section className="blog-card-section">
+      <div className="blog-card">
+        <img
+                  src={blogMainImage}
+                  alt="Main Blog"
+          className="blog-card-image"
+        />
+
+        <div className="blog-card-content">
+          <h2 className="blog-card-title">
+            7 Effective Do’s and Don’t’s of Making Pooja Room Designs in Homes
+          </h2>
+
+          <div className="blog-card-meta">
+            <span>
+              By <span className="author-name">Admin</span>
+            </span>
+            <span className="divider">|</span>
+            <span>On July 15, 2024 6:45 AM</span>
+            <span className="divider">|</span>
+            <span>In</span>
+          </div>
+
+          <p className="blog-card-text">
+            It’s not to describe the importance of a pooja room in any Indian house.
+            Our roots are so deeply connected with mythology and spirituality that
+            an Indian home is felt incomplete without a pooja room regardless of the
+            religion. That is why, at Interior Design Wala we pay close attention to
+            client briefs while making p...
+          </p>
+
+          <button className="blog-read-btn">
+            Read More <span className="arrow">➜</span>
+          </button>
+        </div>
+      </div>
+      </section>
+
     </div>
   );
 };
