@@ -36,6 +36,7 @@
   font-weight: 600;
 }
 
+
 /* ✅ Responsive */
 .menu-icon {
   display: none;
@@ -277,6 +278,11 @@
   background-color: #f7f7f7;
   color: #d72027;
 }
+
+
+
+
+
 
 /* ============================= */
 /* MENU ICON (MOBILE)            */
@@ -755,7 +761,7 @@
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  min-width: 220px;
+  max-width: 250px;
   z-index: 999;
   animation: dropdownFade 0.25s ease;
 }
@@ -995,3 +1001,194 @@
   width: auto;        /* keeps it non-stretched */
   object-fit: contain;
 }
+
+
+
+.hamburger {
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1500; /* sits above nav-links panel */
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 4px 0;
+  background: #0d0d0d !important;
+  border-radius: 2px;
+  transition: transform 200ms ease, opacity 150ms ease;
+  transform-origin: center;
+}
+
+/* X animation when open: add class "open" to .hamburger */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(9px) rotate(40deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-9px) rotate(-40deg);
+}
+
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 21px;   /* adjust if needed to visually align with your navbar */
+    right: 24px; /* adjust spacing from right */
+  }
+
+  /* ensure hamburger sits above the mobile nav panel */
+  .nav-links {
+    z-index: 1400;
+  }
+}
+
+/* Remove click/focus border around hamburger */
+.hamburger {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.hamburger:focus,
+.hamburger:active,
+.hamburger:hover {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
+/* ======= Mobile hamburger: force reliable open/close ======= */
+@media (max-width: 900px) {
+  /* hide by default */
+  .nav-links {
+    display: none !important;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    /* box-shadow: 0 2px 12px rgba(0,0,0,0.2); */
+    z-index: 1400;
+  }
+
+  /* show when open: use !important to beat conflicting rules */
+  .nav-links.open {
+    display: flex !important;
+  }
+
+  /* ensure hamburger sits above everything */
+  .hamburger {
+    z-index: 1600 !important;
+  }
+
+  .nav-logo {
+    order: 2;                    
+    height: 80px;              
+    margin-top: -9px;
+    max-width: 85%;
+    object-fit: contain;
+  }
+  
+
+  .submenu{
+    top:50px;
+    left:10%;
+  }
+}
+@media (max-width:600px) {
+  .submenu{
+    top:50px;
+    left:-10%;
+  }
+}
+
+/* -----------------------------
+   NAVBAR: remove click/tap blue
+   ----------------------------- */
+
+/* 1) Disable mobile tap highlight and default appearance for navbar controls */
+.navbar a,
+.navbar button,
+.navbar .dropdown-btn,
+.navbar .submenu-label,
+.navbar .hamburger,
+.navbar .nav-links * {
+  -webkit-tap-highlight-color: transparent; /* Chrome/Safari mobile tap */
+  -webkit-appearance: none;                 /* remove native button styles */
+  appearance: none;
+  -moz-appearance: none;
+}
+
+/* 2) Remove focus/active outlines & UA box-shadows (catch-all) */
+.navbar a:focus,
+.navbar a:active,
+.navbar button:focus,
+.navbar button:active,
+.navbar .dropdown-btn:focus,
+.navbar .dropdown-btn:active,
+.navbar .submenu-label:focus,
+.navbar .submenu-label:active,
+.navbar .hamburger:focus,
+.navbar .hamburger:active,
+.navbar .dropdown-menu a:focus,
+.navbar .dropdown-menu a:active,
+.navbar .submenu a:focus,
+.navbar .submenu a:active {
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  border-color: transparent !important;
+}
+
+/* Firefox inner focus for buttons */
+button::-moz-focus-inner { border: 0; }
+
+/* 3) Provide keyboard-only visible focus (accessible) using :focus-visible
+   — shows only when user navigates with keyboard, not on mouse/tap */
+.navbar a:focus-visible,
+.navbar button:focus-visible,
+.navbar .dropdown-btn:focus-visible,
+.navbar .submenu-label:focus-visible,
+.navbar .hamburger:focus-visible {
+  outline: 3px solid rgba(215,32,39,0.18); /* subtle red ring */
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(215,32,39,0.06);
+}
+
+/* 4) Ensure active color doesn't suddenly change to blue on click */
+.navbar a:active,
+.navbar button:active,
+.navbar .dropdown-btn:active,
+.navbar .submenu-label:active {
+  color: inherit;
+  background: transparent;
+}
+
+/* 5) Safety: ensure links do not get UA "accent" on iOS */
+a { -webkit-touch-callout: none; }
+
+/* Optional: if you still see a colored ring in some browsers, force the outline-color */
+.navbar *:focus { outline-color: transparent; }
+
+
+
+
