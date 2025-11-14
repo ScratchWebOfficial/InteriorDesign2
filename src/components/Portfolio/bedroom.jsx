@@ -42,7 +42,7 @@ const Bedroom = () => {
           <li>ENTERTAINMENT ROOM</li>
           <li>STAIRS</li>
           <li>DOORS WINDOW</li>
-          <li>TV CABINET</li>
+          <li>TV </li>
           <li>FALSE CEILING</li>
         </ul>
       </section>
