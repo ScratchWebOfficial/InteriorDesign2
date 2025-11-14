@@ -13,6 +13,7 @@ import Career from "./components/Career/Career";
 import OnlineDesign from "./components/Services/OnlineDesign";
 import TurnkeyProjects from "./components/Services/TurnkeyProjects";
 
+import Rendering from "./components/Services/Rendering";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/online-interior-designing" element={<OnlineDesign />} />
           <Route path="/turnkey-projects" element={<TurnkeyProjects />} />
 
+          <Route path="/3D-rendering-services" element={<Rendering />}/>
       </Routes>
     </Router>
   );
