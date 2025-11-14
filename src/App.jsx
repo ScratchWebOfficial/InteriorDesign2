@@ -11,6 +11,8 @@ import Contact from "./components/Contact/Contact";
 import Blog from "./components/Blog/Blog";
 import Career from "./components/Career/Career";
 import OnlineDesign from "./components/Services/OnlineDesign";
+import TurnkeyProjects from "./components/Services/TurnkeyProjects";
+
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
          <Route path="/blog" element={<Blog />} />
           <Route path="/career" element={<Career />} />
           <Route path="/online-interior-designing" element={<OnlineDesign />} />
+          <Route path="/turnkey-projects" element={<TurnkeyProjects />} />
+
       </Routes>
     </Router>
   );

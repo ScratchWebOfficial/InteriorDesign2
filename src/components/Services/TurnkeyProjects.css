@@ -1,0 +1,1531 @@
+/* ====================================== */
+/* TURNKEY PROJECT PAGE GENERAL */
+/* ====================================== */
+
+.turnkey-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+/* ====================================== */
+/* HERO SECTION */
+/* ====================================== */
+
+.turnkey-hero {
+  width: 100%;
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.turnkey-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.turnkey-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  max-width: 900px;
+  line-height: 1.3;
+}
+
+.turnkey-breadcrumb {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #ddd;
+}
+
+.turnkey-breadcrumb span {
+  margin: 0 5px;
+}
+
+
+
+/* ====================================== */
+/* INTRO SECTION */
+/* ====================================== */
+
+.turnkey-intro {
+  text-align: center;
+  padding: 80px 10%;
+  background: #ffffff;
+}
+
+.turnkey-intro-logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.turnkey-intro-tagline {
+  color: #e63946;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.turnkey-intro-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #222;
+}
+
+.turnkey-intro-subtitle {
+  font-size: 32px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.turnkey-intro-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.turnkey-call-btn,
+.turnkey-book-btn {
+  padding: 15px 28px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.turnkey-call-btn {
+  background: #e63946;
+  color: #fff;
+}
+
+.turnkey-call-btn:hover {
+  background: #c52b35;
+}
+
+.turnkey-book-btn {
+  background: #111;
+  color: #fff;
+}
+
+.turnkey-book-btn:hover {
+  background: #000;
+}
+
+
+
+/* ====================================== */
+/* EXECUTED PROJECTS SECTION */
+/* ====================================== */
+
+.executed-section {
+  padding: 80px 10%;
+  background: #fafafa;
+}
+
+.executed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.executed-sub {
+  color: #e63946;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.executed-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #222;
+}
+
+.executed-title span {
+  color: #000;
+  font-weight: 500;
+}
+
+.executed-viewall {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.executed-viewall:hover {
+  color: #e63946;
+}
+
+
+
+/* GRID */
+
+.executed-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+
+/* CARD */
+
+.executed-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  height: 430px;
+  background: #000;
+}
+
+.executed-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+
+.executed-card:hover img {
+  transform: scale(1.08);
+}
+
+
+/* ARROW BUTTON — the large white button */
+
+.executed-arrow {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 38px;
+  color: #444;
+  font-weight: 300;
+  
+  cursor: pointer;
+  z-index: 10;
+
+  transition: all .3s ease;
+}
+
+.executed-arrow:hover {
+  transform: scale(1.07);
+  border-color: #bfbfbf;
+  color: #000;
+}
+
+
+
+/* CARD TEXT */
+
+.executed-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 25px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: #fff;
+}
+
+.client-name {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.client-project {
+  font-size: 20px;
+  margin-top: 5px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+
+/* ====================================== */
+/* RESPONSIVE */
+/* ====================================== */
+
+@media (max-width: 992px) {
+  .executed-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .turnkey-title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .executed-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .turnkey-title {
+    font-size: 28px;
+  }
+
+  .executed-arrow {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .turnkey-intro-title {
+    font-size: 30px;
+  }
+
+  .turnkey-intro-subtitle {
+    font-size: 22px;
+  }
+}
+/* ====================================== */
+/* WHY US — CHOOSE US FOR */
+/* ====================================== */
+
+.whyus-section {
+  text-align: center;
+  padding: 100px 10%;
+  background: #ffffff;
+}
+
+.whyus-sub {
+  color: #e63946;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.whyus-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 60px;
+}
+
+.whyus-title span {
+  color: #444;
+  font-weight: 600;
+}
+
+.whyus-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 25px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.whyus-card {
+  width: 220px;
+  min-height: 260px;
+  padding: 40px 20px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.05);
+  transition: all .3s ease;
+  text-align: center;
+}
+
+.whyus-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.whyus-icon {
+  font-size: 65px;
+  color: #e63946;
+  margin-bottom: 20px;
+}
+
+.whyus-card h4 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .whyus-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .whyus-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .whyus-card {
+    width: 100%;
+  }
+
+  .whyus-title {
+    font-size: 32px;
+  }
+}
+/* WHY US - Hover Red Box */
+.whyus-card {
+  position: relative;
+  background: #fff;
+  padding: 35px 20px;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.whyus-hover-box {
+  position: absolute;
+  inset: 0;
+  background: #e63946;
+  color: #fff;
+  padding: 25px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+  border-radius: 10px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.9);
+  transition: 0.35s ease;
+}
+
+/* SHOW ON HOVER */
+.whyus-card:hover .whyus-hover-box {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+/* TALK TO DESIGNER SECTION */
+.talk-designer-section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.talk-designer-sub {
+  color: #e63946;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.talk-designer-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.talk-designer-desc {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.designer-form {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.form-input {
+  flex: 1;
+  padding: 15px 18px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #e63946;
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 15px 18px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: none;
+  font-size: 16px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.captcha-row {
+  align-items: center;
+}
+
+.captcha-label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.captcha-input {
+  width: 200px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: 25px;
+  background-color: #e63946;
+  color: #fff;
+  padding: 18px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  background-color: #c92a36;
+}
+
+.designer-footer {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #444;
+}
+
+.designer-footer strong {
+  font-weight: 700;
+}
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;   /* ensures text stays in one line */
+}
+/* =========================== */
+/* HOW IT WORKS SECTION */
+/* =========================== */
+
+.howitworks-section {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.howitworks-sub {
+  color: #e63946;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.howitworks-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #333;
+}
+
+.howitworks-title span {
+  color: #000;
+}
+
+.howitworks-text {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.howitworks-container {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.howitworks-left {
+  flex: 1;
+  text-align: left;
+}
+
+.stage-number {
+  color: #e63946;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.stage-title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.stage-description {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.meet-designer-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.howitworks-btn {
+  background: #e63946;
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.howitworks-btn:hover {
+  background: #c72f3c;
+}
+
+.howitworks-right {
+  flex: 1;
+}
+
+.howitworks-img {
+  width: 100%;
+  max-width: 500px;
+}
+/* ---------------------------------------------------
+   HERO SECTION
+-----------------------------------------------------*/
+.turnkey-hero {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.turnkey-overlay {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding-top: 80px;
+  backdrop-filter: brightness(0.5);
+}
+
+.turnkey-title {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.turnkey-breadcrumb {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+/* ---------------------------------------------------
+   INTRO SECTION
+-----------------------------------------------------*/
+.turnkey-intro {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.turnkey-intro-logo {
+  width: 90px;
+  margin-bottom: 15px;
+}
+
+.turnkey-intro-tagline {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.turnkey-intro-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.turnkey-intro-subtitle {
+  font-size: 28px;
+  margin-top: -10px;
+}
+
+.turnkey-intro-buttons {
+  margin-top: 25px;
+}
+
+.turnkey-call-btn,
+.turnkey-book-btn {
+  padding: 12px 25px;
+  background: red;
+  color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.turnkey-book-btn {
+  background: #111;
+}
+
+.turnkey-call-btn:hover,
+.turnkey-book-btn:hover {
+  opacity: 0.8;
+}
+
+
+/* ---------------------------------------------------
+   EXECUTED SITE SECTION
+-----------------------------------------------------*/
+.executed-section {
+  padding: 70px 5%;
+}
+
+.executed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.executed-title span {
+  color: red;
+}
+
+.executed-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.executed-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.executed-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.executed-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+
+.executed-arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.executed-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+}
+
+.client-project {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* ---------------------------------------------------
+   WHY US SECTION
+-----------------------------------------------------*/
+.whyus-section {
+  padding: 70px 5%;
+  text-align: center;
+}
+
+.whyus-sub {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.whyus-title span {
+  color: red;
+}
+
+.whyus-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 25px;
+}
+
+.whyus-card {
+  background: #fff;
+  padding: 35px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #eee;
+}
+
+.whyus-icon {
+  color: red;
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.whyus-card:hover {
+  background: red;
+  color: #fff;
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.whyus-card:hover .whyus-icon {
+  color: #fff;
+}
+
+
+/* ---------------------------------------------------
+   TALK TO DESIGNER SECTION
+-----------------------------------------------------*/
+.talk-designer-section {
+  padding: 80px 10%;
+  text-align: center;
+  background: #fafafa;
+}
+
+.talk-sub {
+  color: red;
+  font-weight: bold;
+}
+
+.talk-title {
+  font-size: 42px;
+  margin-top: 5px;
+}
+
+.talk-text {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #777;
+}
+
+.talk-form {
+  margin-top: 40px;
+}
+
+.talk-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.talk-row input,
+.talk-row textarea {
+  width: 100%;
+  max-width: 450px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.talk-row textarea {
+  height: 150px;
+}
+
+.talk-bhk label {
+  margin-right: 20px;
+}
+
+.talk-submit {
+  background: red;
+  color: #fff;
+  padding: 14px 40px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.talk-submit:hover {
+  opacity: 0.8;
+}
+
+.talk-contact {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+
+/* ---------------------------------------------------
+   HOW IT WORKS SECTION — REGULAR + REVERSE
+-----------------------------------------------------*/
+.howitworks-section {
+  padding: 80px 10%;
+}
+
+.howitworks-sub {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+.howitworks-title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.howitworks-title span {
+  color: red;
+}
+
+.howitworks-text {
+  text-align: center;
+  color: #777;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.howworks-block {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 80px;
+}
+
+.howworks-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.how-img {
+  width: 500px;
+  max-width: 100%;
+}
+
+.stage-number {
+  font-size: 20px;
+  color: red;
+}
+
+.stage-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 5px 0 15px;
+}
+
+.stage-description {
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.howitworks-btn {
+  background: red;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.howitworks-btn:hover {
+  opacity: 0.85;
+}
+/* =============================== */
+/* ⭐ HOW IT WORKS – MAIN SECTION   */
+/* =============================== */
+
+.howworks-section {
+  width: 100%;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.how-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.how-subheader {
+  color: #d90000;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.how-title span {
+  color: #000;
+}
+
+.how-description {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 60px;
+}
+
+/* =============================== */
+/* ⭐ STAGE BLOCK — FLEX LAYOUT     */
+/* =============================== */
+
+.how-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.how-text {
+  flex: 1;
+  text-align: left;
+}
+
+.how-stage-number {
+  font-size: 18px;
+  font-weight: 700;
+  color: #d90000;
+  margin-bottom: 10px;
+}
+
+.how-stage-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.how-stage-content {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.how-subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* =============================== */
+/* ⭐ BUTTON                        */
+/* =============================== */
+
+.how-readmore {
+  background: #d90000;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.how-readmore:hover {
+  background: #b80000;
+}
+
+/* =============================== */
+/* ⭐ IMAGE SECTION                 */
+/* =============================== */
+
+.how-image-wrapper {
+  flex: 1;
+  text-align: right;
+}
+
+.how-image {
+  width: 90%;
+  max-width: 520px;
+}
+
+/* =============================== */
+/* ⭐ RESPONSIVE DESIGN             */
+/* =============================== */
+
+@media (max-width: 992px) {
+  .how-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .how-text {
+    text-align: center;
+  }
+
+  .how-image-wrapper {
+    text-align: center;
+  }
+
+  .how-image {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .how-title {
+    font-size: 28px;
+  }
+
+  .how-stage-title {
+    font-size: 26px;
+  }
+
+  .how-description {
+    font-size: 16px;
+  }
+}
+/* Hidden content block */
+.more-content {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+/* When expanded */
+.more-content.show {
+  height: auto;
+  opacity: 1;
+  margin-top: 20px;
+}
+
+/* Read More button */
+.how-readmore {
+  background: #d90000;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.how-readmore:hover {
+  background: #b80000;
+}
+/* ----------------------------- */
+/* ⭐ READ MORE CONTENT ANIMATION */
+/* ----------------------------- */
+
+.more-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 
+      max-height 0.5s ease-in-out,
+      opacity 0.4s ease-in-out,
+      padding 0.3s ease-in-out;
+  padding: 0 0; /* hidden state */
+}
+
+.more-content.show {
+  max-height: 800px; /* enough for long content */
+  opacity: 1;
+  padding: 10px 0;
+}
+
+/* ----------------------------- */
+/* ⭐ READ MORE / READ LESS BUTTON */
+/* ----------------------------- */
+
+.how-readmore {
+  margin-top: 18px;
+  background: #d42027;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.how-readmore:hover {
+  background: #b31821;
+}
+/* HOW SECTION */
+.how-section {
+  width: 90%;
+  margin: auto;
+  padding: 60px 0;
+}
+
+.how-sub {
+  color: #d31c1c;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.how-title {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.how-tagline {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.how-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.how-left {
+  width: 55%;
+}
+
+.stage-label {
+  color: #d31c1c;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.stage-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.stage-subtitle {
+  margin-top: 25px;
+  color: #d31c1c;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.stage-text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #333;
+}
+
+/* READ MORE CONTENT HIDE/SHOW */
+.extra-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.extra-content.show {
+  max-height: 900px;
+  opacity: 1;
+}
+
+.how-read-btn {
+  margin-top: 20px;
+  padding: 12px 26px;
+  background: #e41d23;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.how-right {
+  width: 40%;
+}
+
+.how-img {
+  width: 100%;
+}
+/* ------------------------------ */
+/* ⭐ HOW IT WORKS MAIN SECTION    */
+/* ------------------------------ */
+
+.how-section {
+  width: 90%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.how-sub {
+  text-align: center;
+  color: #d31c1c;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.how-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.how-tagline {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  opacity: 0.8;
+  margin-bottom: 60px;
+}
+
+/* ------------------------------ */
+/* ⭐ LAYOUT: TEXT LEFT / IMAGE RIGHT */
+/* ------------------------------ */
+
+.how-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+/* ------------------------------ */
+/* ⭐ LEFT CONTENT */
+/* ------------------------------ */
+
+.how-left {
+  width: 55%;
+}
+
+.stage-label {
+  color: #d31c1c;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.stage-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #222;
+}
+
+.stage-text {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.stage-subtitle {
+  color: #d31c1c;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+/* ------------------------------ */
+/* ⭐ RIGHT SIDE IMAGE */
+/* ------------------------------ */
+
+.how-right {
+  width: 40%;
+  text-align: right;
+}
+
+.how-img {
+  width: 100%;
+  max-width: 520px;
+}
+
+/* ------------------------------ */
+/* ⭐ RESPONSIVE DESIGN */
+/* ------------------------------ */
+
+@media (max-width: 992px) {
+  .how-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .how-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .how-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .how-img {
+    width: 85%;
+  }
+}
+
+@media (max-width: 600px) {
+  .how-title {
+    font-size: 30px;
+  }
+
+  .stage-title {
+    font-size: 26px;
+  }
+
+  .stage-text {
+    font-size: 16px;
+  }
+}
+.how-right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;   /* centers vertically */
+  height: 100%;          /* makes vertical alignment work */
+  padding-top:170px    /* pushes image slightly downward */
+}
+
+.how-img {
+  width: 100%;
+  max-width: 520px;
+}
+/* ----------------------------- */
+/* ⭐ STAGE 2 — HOW IT WORKS */
+/* ----------------------------- */
+
+.stage2-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.stage2-img {
+  margin-top: 80px; /* shifts image slightly lower to match your screenshot */
+}
+
+.stage-title {
+  color: #000;
+}
+
+.stage-text {
+  font-size: 16px;
+  line-height: 28px;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+.stage-subtitle {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #d31c1c;
+}
+
+.stage-label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #d90000;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .reverse {
+    flex-direction: column !important;
+  }
+  .stage2-img {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+.whyus-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin: auto;
+  max-width: 1300px;
+}
+
