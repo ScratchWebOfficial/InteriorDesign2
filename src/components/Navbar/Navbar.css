@@ -178,6 +178,7 @@
 
 .nav-logo {
   height: 55px;
+  
 }
 
 .nav-links {
@@ -987,4 +988,10 @@
 .nav-links .dropdown-btn {
   margin: 0;
   padding: 0;
+}
+
+.nav-logo {
+  height: 70px;       /* perfect proportional size */
+  width: auto;        /* keeps it non-stretched */
+  object-fit: contain;
 }

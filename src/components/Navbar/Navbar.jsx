@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo_12311.png";
 import "./Navbar.css";
+
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(null); // tracks which dropdown is open
@@ -33,7 +35,7 @@ const Navbar = () => {
     <nav className="navbar">
       {/* ✅ Logo */}
       <div className="nav-left">
-        <img src="/logo.png" alt="Logo" className="nav-logo" />
+        <img src={logo} alt="Logo" className="nav-logo" />
       </div>
 
       {/* ✅ Navbar Links */}
