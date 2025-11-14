@@ -18,7 +18,7 @@ import Preloader from "./components/Preloader/Preloader";
 
 function App() {
 
-  const [loading, setLoading] = useState(true);
+  /* const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Show preloader for 1.5 seconds or until page fully loads
@@ -32,7 +32,7 @@ function App() {
 
   if (loading) {
     return <Preloader />;
-  }
+  } */
 
 
 
