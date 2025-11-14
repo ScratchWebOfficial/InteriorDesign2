@@ -12,9 +12,9 @@ import Blog from "./components/Blog/Blog";
 import Career from "./components/Career/Career";
 import OnlineDesign from "./components/Services/OnlineDesign";
 import TurnkeyProjects from "./components/Services/TurnkeyProjects";
-
 import Rendering from "./components/Services/Rendering";
 import Preloader from "./components/Preloader/Preloader";
+import Bedroom from "./components/Portfolio/bedroom";
 
 function App() {
 
@@ -52,8 +52,8 @@ function App() {
           <Route path="/career" element={<Career />} />
           <Route path="/online-interior-designing" element={<OnlineDesign />} />
           <Route path="/turnkey-projects" element={<TurnkeyProjects />} />
-
           <Route path="/3D-rendering-services" element={<Rendering />}/>
+          <Route path="/residential/bedroom" element={<Bedroom />}/>
       </Routes>
     </Router>
   );
