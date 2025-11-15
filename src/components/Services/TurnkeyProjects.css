@@ -1529,3 +1529,484 @@
   max-width: 1300px;
 }
 
+/* --------------------------------------------- */
+/* ⭐ HOW IT WORKS — STAGE 2 SECTION             */
+/* --------------------------------------------- */
+
+.stage2-section {
+  margin-top: 60px;
+  padding: 60px 10%;
+}
+
+.stage2-section .how-wrapper {
+  display: flex;
+  align-items: center;        /* centers image vertically */
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* LEFT IMAGE */
+.stage2-img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  display: block;
+  margin-left: 20px;          /* slight push for perfect look */
+}
+
+/* RIGHT CONTENT */
+.stage2-section .how-left {
+  width: 60%;
+}
+
+.stage2-section .stage-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.stage2-section .stage-label {
+  color: #d31c1c;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.stage2-section .stage-text {
+  font-size: 17px;
+  line-height: 29px;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+.stage2-section .stage-subtitle {
+  margin-top: 28px;
+  margin-bottom: 6px;
+  color: #d31c1c;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+/* --------------------------------------------- */
+/* ⭐ RESPONSIVE — MOBILE FIXES                  */
+/* --------------------------------------------- */
+
+@media (max-width: 992px) {
+  .stage2-section .how-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stage2-section .how-left {
+    width: 100%;
+  }
+
+  .stage2-img {
+    margin: auto;
+    max-width: 380px;
+  }
+}
+/* --------------------------------------------- */
+/* ⭐ HOW IT WORKS — STAGE 3 SECTION             */
+/* --------------------------------------------- */
+
+.stage3-section {
+  margin-top: 80px;
+  padding: 60px 10%;
+}
+
+.stage3-section .how-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* TEXT BLOCK */
+.stage3-section .how-left {
+  width: 60%;
+}
+
+.stage3-section .stage-label {
+  color: #d31c1c;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.stage3-section .stage-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.stage3-section .stage-subtitle {
+  margin-top: 28px;
+  margin-bottom: 6px;
+  color: #d31c1c;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.stage3-section .stage-text {
+  font-size: 17px;
+  line-height: 29px;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+/* IMAGE BLOCK */
+.stage3-img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .stage3-section .how-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stage3-section .how-left {
+    width: 100%;
+  }
+
+  .stage3-img {
+    margin: auto;
+    max-width: 380px;
+  }
+}
+
+/* ------------------------------------- */
+/* ⭐ GLOBAL HOW SECTION STYLES (already exist but improved) */
+/* ------------------------------------- */
+
+.how-section {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.how-wrapper {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.how-left,
+.how-right {
+  flex: 1;
+}
+
+.how-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ------------------------------------- */
+/* ⭐ STAGE LABEL & TITLES */
+/* ------------------------------------- */
+
+.stage-label {
+  color: #d60000;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.stage-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.stage-subtitle {
+  color: #d60000;
+  margin-top: 35px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.stage-text {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  color: #444;
+}
+
+/* ------------------------------------- */
+/* ⭐ STAGE 4 — HANDOVER */
+/* IMAGE LEFT, CONTENT RIGHT */
+/* ------------------------------------- */
+
+.stage4-section .how-wrapper {
+  flex-direction: row;       /* Image Left → Content Right */
+}
+
+/* Reduce image size if needed */
+.stage4-img {
+  width: 85%;
+  margin-left: auto;
+}
+
+/* ------------------------------------- */
+/* ⭐ STAGE 5 — AFTER SUPPORT */
+/* IMAGE RIGHT, CONTENT LEFT */
+/* ------------------------------------- */
+
+.stage5-section .how-wrapper {
+  flex-direction: row-reverse;   /* Image Right → Content Left */
+}
+
+.stage5-img {
+  width: 85%;
+  margin-right: auto;
+}
+
+/* ------------------------------------- */
+/* ⭐ RESPONSIVE DESIGN */
+/* ------------------------------------- */
+
+@media (max-width: 992px) {
+  .how-wrapper {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .how-left, .how-right {
+    width: 100%;
+  }
+
+  .how-img {
+    width: 80%;
+    margin: auto;
+  }
+
+  .stage-title {
+    font-size: 32px;
+  }
+}
+/* =============================================== */
+/* ⭐ STAGE 5 — AFTER SUPPORT (TEXT LEFT, IMAGE RIGHT) */
+/* =============================================== */
+
+.stage5-section {
+  padding: 40px 0 40px 0;       /* reduced top & bottom spacing */
+}
+
+.stage5-section .how-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;                    /* similar spacing as Stage 4 */
+}
+
+/* LEFT TEXT */
+.stage5-section .how-left {
+  width: 60%;
+}
+
+.stage5-section .stage-label {
+  color: #d31c1c;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.stage5-section .stage-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #222;
+}
+
+.stage5-section .stage-text {
+  font-size: 17px;
+  line-height: 29px;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+/* RIGHT IMAGE */
+.stage5-section .how-right {
+  width: 40%;
+  text-align: right;
+}
+
+.stage5-img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+
+/* =============================================== */
+/* ⭐ RESPONSIVE FIXES */
+/* =============================================== */
+@media (max-width: 992px) {
+  .stage5-section .how-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .stage5-section .how-left,
+  .stage5-section .how-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .stage5-img {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+/* ===================================== */
+/* ⭐ FAQ SECTION */
+/* ===================================== */
+
+.faq-section {
+  width: 100%;
+  padding: 80px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  background: #f7f7f7;
+}
+
+/* LEFT FAQ COLUMN */
+.faq-left {
+  width: 60%;
+}
+
+.faq-sub {
+  color: #d31c1c;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.faq-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  color: #333;
+}
+
+.faq-box {
+  width: 100%;
+  background: #fff;
+  padding: 28px 25px;
+  border-radius: 4px;
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #3c3c3c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  cursor: pointer;
+}
+
+.faq-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  color: #555;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* RIGHT CARD */
+.faq-contact-card {
+  width: 40%;
+  background: #3c3c3c;
+  padding: 50px 40px;
+  border-radius: 6px;
+  text-align: center;
+  color: #fff;
+}
+
+.faq-contact-icon img {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+.faq-contact-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.faq-divider {
+  margin: 20px 0;
+  border: none;
+  border-bottom: 1px solid #555;
+}
+
+.faq-phone {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.faq-email {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+.faq-start-btn {
+  width: 100%;
+  background: #e31c25;
+  color: #fff;
+  padding: 14px 0;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.faq-download-btn {
+  width: 100%;
+  padding: 14px 0;
+  background: #e31c25;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ===================================== */
+/* RESPONSIVE */
+/* ===================================== */
+
+@media (max-width: 992px) {
+  .faq-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .faq-left,
+  .faq-contact-card {
+    width: 100%;
+  }
+
+  .faq-box {
+    justify-content: center;
+    gap: 20px;
+  }
+}
