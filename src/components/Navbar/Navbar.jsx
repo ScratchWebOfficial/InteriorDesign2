@@ -197,7 +197,7 @@ const Navbar = () => {
         {activeSubmenu === "residential" && (
           <div className="submenu">
             <Link to="/residential/bedroom">Bedroom Interiors</Link>
-            <Link to="/residential/living room">Living Room Interiors</Link>
+            <Link to="/residential/living">Living Room Interiors</Link>
             <Link to="/residential/kitchen">Kitchen Interiors </Link>
             <Link to="/residential/kids">Kids Bedroom Interiors</Link>
             <Link to="/residential/Toilet">Toilet Interiors</Link>
