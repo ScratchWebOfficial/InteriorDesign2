@@ -163,28 +163,81 @@ const Navbar = () => {
           )}
         </div>
 
-        <div className="dropdown">
-          <button
-            type="button"
-            className="dropdown-btn"
-            onClick={(e) => toggleDropdown("portfolio", e)}
-            aria-haspopup="true"
-            aria-expanded={dropdownOpen === "portfolio"}
+        {/* ✅ Portfolio Dropdown */}
+<div className="dropdown">
+  <button
+    className="dropdown-btn"
+    onClick={() => toggleDropdown("portfolio")}
+  >
+    Portfolio{" "}
+    <span className={`arrow ${dropdownOpen === "portfolio" ? "up" : "down"}`}>
+      ▼
+    </span>
+  </button>
+
+  {dropdownOpen === "portfolio" && (
+    <div className="dropdown-menu">
+      
+      {/* ⭐ Residential Interior Designs dropdown */}
+      <div
+        className="submenu-item"
+        onClick={() => handleSubmenuToggle("residential")}
+      >
+        <span className="submenu-label">
+          Residential Interior Designs{" "}
+          <span
+            className={`arrow ${
+              activeSubmenu === "residential" ? "up" : "down"
+            }`}
           >
-            Portfolio{" "}
-            <span className={`arrow ${dropdownOpen === "portfolio" ? "up" : "down"}`}>▼</span>
-          </button>
+            ▶
+          </span>
+        </span>
 
-          {dropdownOpen === "portfolio" && (
-            <div className="dropdown-menu" role="menu" onClick={(e) => e.stopPropagation()}>
-              <Link to="/portfolio/residential" onClick={closeMobile}>Residential Interior Designs</Link>
-              <Link to="/portfolio/commercial" onClick={closeMobile}>Commercial Interiors Designs</Link>
-            </div>
-          )}
-        </div>
+        {activeSubmenu === "residential" && (
+          <div className="submenu">
+            <Link to="/residential/bedroom">Bedroom Interiors</Link>
+            <Link to="/residential/living room">Living Room Interiors</Link>
+            <Link to="/residential/kitchen">Kitchen Interiors </Link>
+            <Link to="/residential/kids">Kids Bedroom Interiors</Link>
+            <Link to="/residential/Toilet">Toilet Interiors</Link>
+          </div>
+        )}
+      </div>
 
-        <Link to="/blog" onClick={closeMobile}>Blog</Link>
-        <Link to="/contact" onClick={closeMobile}>Contact</Link>
+      {/* ⭐ Commercial Interior Designs dropdown */}
+      <div
+        className="submenu-item"
+        onClick={() => handleSubmenuToggle("commercial")}
+      >
+        <span className="submenu-label">
+          Commercial Interior Designs{" "}
+          <span
+            className={`arrow ${
+              activeSubmenu === "commercial" ? "up" : "down"
+            }`}
+          >
+            ▶
+          </span>
+        </span>
+
+        {activeSubmenu === "commercial" && (
+          <div className="submenu">
+            <Link to="/commercial/offices">Office Interiors</Link>
+            <Link to="/commercial/showrooms">Showroom Interiors</Link>
+            <Link to="/commercial/hotel">Hotel Interiors</Link>
+            <Link to="/commercial/hospital">Hospital/Clinic Interiors</Link>
+             <Link to="/commercial/resturant">Resturant Interiors</Link>
+          </div>
+        )}
+      </div>
+
+    </div>
+  )}
+</div>
+        {/* ✅ Other Links */}
+        <Link to="/blog">Blog</Link>
+        <Link to="/contact">Contact</Link>
 
         <Link to="/login" onClick={closeMobile}>
           <button className="quote-btn login">Login</button>
