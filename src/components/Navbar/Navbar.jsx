@@ -236,9 +236,43 @@ const Navbar = () => {
   )}
 </div>
         {/* ✅ Other Links */}
-        <Link to="/blog">Blog</Link>
-        <Link to="/contact">Contact</Link>
+       {/* <Link to="/blog">Blog</Link>*/}
+      {/* ⭐ BLOG DROPDOWN ADDED HERE */}
+       <div
+  className="dropdown"
+  onMouseEnter={() => setDropdownOpen("blog")}
+  onMouseLeave={() => setDropdownOpen(null)}
+>
+  <button
+    className="dropdown-btn"
+    onClick={(e) => {
+      e.stopPropagation();
+      closeMobile();
+      // redirect to main blog page
+      window.location.href = "/blog";
+    }}
+  >
+    Blog <span className={`arrow ${dropdownOpen === "blog" ? "up" : "down"}`}>▼</span>
+  </button>
 
+  {dropdownOpen === "blog" && (
+    <div className="dropdown-menu" role="menu">
+      <Link to="/blog/modular-kitchen" onClick={closeMobile}>Modular Kitchen Interior Ideas</Link>
+      <Link to="/blog/home-interior" onClick={closeMobile}>Home Interior Design Ideas</Link>
+      <Link to="/blog/bedroom-design" onClick={closeMobile}>Bedroom Design Ideas</Link>
+      <Link to="/blog/living-room" onClick={closeMobile}>Living Room Design Ideas</Link>
+      <Link to="/blog/dining-room" onClick={closeMobile}>Dining Room Design Ideas</Link>
+      <Link to="/blog/kids-room" onClick={closeMobile}>Kids Bedroom Design Ideas</Link>
+      <Link to="/blog/study-room" onClick={closeMobile}>Study Room Design Ideas</Link>
+      <Link to="/blog/home-decor" onClick={closeMobile}>Home Decor Ideas</Link>
+      <Link to="/blog/design-tours" onClick={closeMobile}>Sahacarah Design Tours</Link>
+      <Link to="/blog/updates" onClick={closeMobile}>Sahacarah Updates</Link>
+    </div>
+  )}
+</div>
+
+
+        <Link to="/contact">Contact</Link>
         <Link to="/login" onClick={closeMobile}>
           <button className="quote-btn login">Login</button>
         </Link>
