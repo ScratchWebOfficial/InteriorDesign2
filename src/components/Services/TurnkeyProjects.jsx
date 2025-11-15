@@ -437,7 +437,7 @@ const TurnkeyProjects = () => {
 <section className="faq-section">
 
   {/* LEFT SIDE FAQ */}
-  <div className="faq-left">
+  <div className="faq-left ltd">
 
     <h5 className="faq-sub">F&Q'S</h5>
     <h2 className="faq-title">Most Asked Questions</h2>
@@ -465,7 +465,7 @@ const TurnkeyProjects = () => {
   </div>
 
   {/* RIGHT SIDE CONTACT BOX */}
-  <div className="faq-contact-card">
+  <div className="faq-contact-card ltd">
     
     <div className="faq-contact-icon">
       <img 

@@ -1873,7 +1873,7 @@
   padding: 80px 10%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 50px;
   background: #f7f7f7;
 }
@@ -1882,7 +1882,9 @@
 .faq-left {
   width: 60%;
 }
-
+.ltd{
+  padding: 0px 50px 0px 60px;
+}
 .faq-sub {
   color: #d31c1c;
   font-size: 16px;
@@ -2009,4 +2011,12 @@
     justify-content: center;
     gap: 20px;
   }
+}
+
+
+
+/* hover lift */
+.faq-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
