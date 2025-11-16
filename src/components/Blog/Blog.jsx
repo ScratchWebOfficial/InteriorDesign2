@@ -1,11 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Blog.css";
+
 
 import c1 from "../../assets/blogs1.jfif";
 import c2 from "../../assets/blogs2.webp";
 import C3 from "../../assets/blogs3.jfif";
 import c4 from "../../assets/blogs4.jfif";
 import c5 from "../../assets/blogs5.jfif";
+import c6 from "../../assets/blogs1.jfif";
+import c7 from "../../assets/blogs1.jfif";
+import c8 from "../../assets/blogs1.jfif";
+import c9 from "../../assets/blogs1.jfif";
+import c10 from "../../assets/blogs1.jfif";
 
 const categories = [
   { title: "Home Interior Design Ideas", img: c5, link: "/blog/home-interior" },
@@ -18,6 +25,7 @@ const articles = [
   {
     img: c1,
     category: "Bedroom Design Ideas",
+    categoryLink: "/blog/bedroom-design",
     title: "Your Dream Master Bedroom Colour Palette: A Comprehensive Guide",
     author: "Shreya Bilagi",
     read: "5 Min Read",
@@ -27,6 +35,7 @@ const articles = [
   {
     img: c2,
     category: "Home Interior Design Ideas",
+    
     title: "Elevate Your Space with a Stunning Monochromatic Interior Design",
     author: "Mehera Fonozque",
     read: "7 Min Read",
@@ -59,6 +68,51 @@ const articles = [
     read: "7 Min Read",
     desc: "Aluminium kitchen cabinets are lightweight, moisture-resistant and extremely durable...",
     link: "/blog/aluminium-kitchen",
+  },
+  {
+  img: c6,
+  category: "Home Interior Design Ideas",
+  title: "Window Vastu Tips: Usher in Positive Energy & Harmony in Your Home",
+  author: "Sreya Dasgupta",
+  read: "6 Min Read",
+  desc: "Discover essential Window Vastu principles to bring balance, positivity and tranquillity into your living spaces with simple yet powerful design adjustments...",
+  link: "/blog/window-vastu-tips",
+  },
+  {
+  img: c7, 
+  category: "Kids Bedroom Design Ideas",
+  title: "10 Expert Kids Bedroom Design Tips for a Fun and Functional Space",
+  author: "Parvathy Jayakrishnan",
+  read: "6 Min Read",
+  desc: "Fun meets function in every corner with these expert kids’ bedroom design ideas. Designing a kids’ bedroom is all about...",
+  link: "/blog/kids-bedroom-tips",
+  },
+  {
+  img: c8, 
+  category: "Home Interior Design Ideas",
+  title: "Perfect 30×40 House Plans for Smart & Stylish Living",
+  author: "Nikita Raikwar",
+  read: "7 Min Read",
+  desc: "On a 30×40 plot, every corner counts. With the right planning, it transforms into a home that’s practical, vastu-friendly, and...",
+  link: "/blog/30x40-house-plans",
+  },
+  {
+  img: c9,
+  category: "Home Interior Design Ideas",
+  title: "Wall Panelling Cost in India: Types, Prices and Budget Guide",
+  author: "Nikita Raikwar",
+  read: "7 Min Read",
+  desc: "Upgrade your walls without overspending. Learn about wall panelling types, price breakdowns and cost-efficient design choices for every home...",
+  link: "/blog/wall-panelling-cost",
+  },
+  {
+  img: c10, 
+  category: "Home Interior Design Ideas",
+  title: "Pooja Mandir Jali Design: Intricate Patterns Blending Tradition & Divinity",
+  author: "Parvathy Jayakrishnan",
+  read: "6 Min Read",
+  desc: "Explore trending pooja room designs featuring exquisite jali work that blends time-honoured tradition with elegant aesthetics for a serene spiritual experience...",
+  link: "/blog/pooja-mandir-jali-design",
   },
 ];
 
@@ -104,7 +158,11 @@ const Blog = () => {
                 </a>
 
                 <div className="blog-list-content">
-                  <p className="blog-list-category">{item.category}</p>
+                 {/*<p className="blog-list-category">{item.category}</p>*/} 
+                 <Link to={item.categoryLink} className="blog-list-category">
+                    {item.category}
+                 </Link>
+
 
                   <h3 className="blog-list-title">
                     <a href={item.link}>{item.title}</a>

@@ -15,6 +15,8 @@ import TurnkeyProjects from "./components/Services/TurnkeyProjects";
 import Rendering from "./components/Services/Rendering";
 import Preloader from "./components/Preloader/Preloader";
 import Bedroom from "./components/Portfolio/bedroom";
+import BedroomDesign from "./components/Blog/BedroomDesign";
+
 
 function App() {
 
@@ -54,6 +56,7 @@ function App() {
           <Route path="/turnkey-projects" element={<TurnkeyProjects />} />
           <Route path="/3D-rendering-services" element={<Rendering />}/>
           <Route path="/residential/bedroom" element={<Bedroom />}/>
+          <Route path="/blog/bedroom-design" element={<BedroomDesign />} />
       </Routes>
     </Router>
   );
