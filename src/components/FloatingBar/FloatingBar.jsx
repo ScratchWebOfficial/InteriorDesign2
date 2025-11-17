@@ -1,9 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./FloatingBar.css";
 import { FaArrowRight, FaEnvelope, FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 
 const FloatingBar = () => {
   const [open, setOpen] = useState(true);
+  const [showForm, setShowForm] = useState(false);
+  const hideTimerRef = useRef(null);
+
+  const clearHideTimer = () => {
+    if (hideTimerRef.current) {
+      clearTimeout(hideTimerRef.current);
+      hideTimerRef.current = null;
+    }
+  };
+
+  const handleHoverEnter = () => {
+    clearHideTimer();
+    setShowForm(true);
+  };
+
+  const handleHoverLeave = () => {
+    clearHideTimer();
+    hideTimerRef.current = setTimeout(() => setShowForm(false), 140);
+  };
+
+  const handleCloseForm = () => {
+    clearHideTimer();
+    setShowForm(false);
+  };
+
+  useEffect(() => {
+    return () => clearHideTimer();
+  }, []);
+
+  const sharedHoverEvents = {
+    onMouseEnter: handleHoverEnter,
+    onMouseLeave: handleHoverLeave,
+  };
 
   return (
     <>
@@ -18,7 +51,7 @@ const FloatingBar = () => {
       {/* SIDEBAR */}
       <div className={`floating-container ${open ? "open" : "closed"}`}>
         {/* CONTACT SECTION */}
-        <div className="middle-section">
+        <div className="middle-section" {...sharedHoverEvents}>
           <div className="vertical-text">Contact Us</div>
           <a
             href="mailto:fitnfixsolutions@gmail.com"
@@ -45,6 +78,39 @@ const FloatingBar = () => {
           <FaPhoneAlt className="call-icon" />
         </a>
       </div>
+
+      {showForm && (
+        <div className="contact-form-wrapper" {...sharedHoverEvents}>
+          <div className="contact-form-header">
+            <h3>Contact Us</h3>
+            <button
+              type="button"
+              className="close-btn"
+              onClick={handleCloseForm}
+              aria-label="Close contact form"
+            >
+              ×
+            </button>
+          </div>
+
+          <form className="contact-form-content" onSubmit={(e) => e.preventDefault()}>
+            <input type="text" placeholder="Name" className="form-input" />
+            <input type="tel" placeholder="Phone" className="form-input" />
+            <textarea placeholder="Message" className="form-textarea" />
+
+            <div className="captcha-row">
+              <label className="captcha-question" htmlFor="contact-captcha">
+                What is 3 * 3 = ?
+              </label>
+              <input id="contact-captcha" type="text" className="captcha-input" />
+            </div>
+
+            <button type="submit" className="submit-btn">
+              Send Message
+            </button>
+          </form>
+        </div>
+      )}
     </>
   );
 };

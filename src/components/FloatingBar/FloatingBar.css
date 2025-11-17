@@ -3,11 +3,12 @@
 /* =============================== */
 .floating-arrow {
   position: fixed;
-  top: 30%;
   right: 0;
+  top: 40%;
   width: 42px;
   height: 48px;
   background: #000;
+  color: #fff;
   border-radius: 12px 0 0 12px;
   display: flex;
   justify-content: center;
@@ -17,12 +18,12 @@
   transition: transform 0.35s ease;
 }
 
-.arrow-open {
-  transform: translateX(-60px); /* arrow sits above sidebar when open */
+.floating-arrow.arrow-open {
+  transform: translateX(-60px);
 }
 
-.arrow-closed {
-  transform: translateX(0); /* arrow stays on edge */
+.floating-arrow.arrow-closed {
+  transform: translateX(0);
 }
 
 .arrow-icon {
@@ -31,7 +32,6 @@
   transition: transform 0.35s ease;
 }
 
-/* Rotate on close */
 .arrow-icon.rotate {
   transform: rotate(180deg);
 }
@@ -41,14 +41,16 @@
 /* =============================== */
 .floating-container {
   position: fixed;
-  top: 30%;
   right: 0;
+  top: 30%;
   width: 60px;
-  z-index: 2000;
   border-radius: 12px 0 0 12px;
-  overflow: hidden;
-  background: transparent;
-  transition: transform 0.35s ease;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  z-index: 9500;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+  transition: right 0.3s ease;
 }
 
 /* Slide out */
@@ -69,198 +71,255 @@
   height: 145px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
   position: relative;
+  border-radius: 12px 0 0 0;
 }
 
 .vertical-text {
   position: absolute;
+  top: 55%;
   left: 50%;
-  transform: translateX(-50%) rotate(-90deg); /* ✅ PERFECT like your FIRST UI */
-  top: 8px;
-  color: white;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  color: #fff;
   font-size: 17px;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .mail-icon {
-  color: white;
-  font-size: 24px;
-  margin-top: 60px;
+  color: #fff;
+  font-size: 22px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.mail-link:hover .mail-icon {
+  color: #ffcc00;
+  transform: scale(1.1);
 }
 
 /* =============================== */
-/* WHATSAPP SECTION                */
+/* WHATSAPP + CALL                 */
 /* =============================== */
+.whatsapp-section,
+.call-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+}
+
 .whatsapp-section {
   background: #25d366;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.whatsapp-icon {
-  color: white;
-  font-size: 24px;
-}
-
-/* =============================== */
-/* CALL SECTION                    */
-/* =============================== */
 .call-section {
   background: #e32121;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 0 0 0 12px;
 }
 
+.whatsapp-icon,
 .call-icon {
-  color: white;
-  font-size: 24px;
+  color: #fff;
+  font-size: 22px;
 }
 
 /* =============================== */
-/* MOBILE RESPONSIVE               */
+/* CONTACT FORM PANEL              */
+/* =============================== */
+.contact-form-wrapper {
+  position: fixed;
+  top: 50%;
+  right: 92px;
+  transform: translateY(-50%);
+  width: clamp(300px, 32vw, 420px);
+  max-height: calc(100vh - 80px);
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+  z-index: 9000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: fadeInForm 0.25s ease;
+}
+
+.contact-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.contact-form-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #e32121;
+}
+
+.close-btn {
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  color: #555;
+}
+
+.close-btn:hover {
+  color: #111;
+}
+
+.contact-form-content {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+}
+
+.form-input,
+.form-textarea,
+.captcha-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.captcha-input:focus {
+  border-color: #e32121;
+  box-shadow: 0 0 0 2px rgba(227, 33, 33, 0.12);
+}
+
+.form-textarea {
+  min-height: 110px;
+  resize: none;
+}
+
+.captcha-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.captcha-question {
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.captcha-input {
+  flex: 1;
+  min-width: 140px;
+}
+
+.submit-btn {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: #e32121;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #c01919;
+}
+
+@keyframes fadeInForm {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) translateX(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+  }
+}
+
+/* =============================== */
+/* RESPONSIVE                      */
 /* =============================== */
 @media (max-width: 768px) {
   .floating-arrow,
   .floating-container {
-    top: 40%;
+    top: 45%;
+  }
+
+  .contact-form-wrapper {
+    position: fixed;
+    top: 20px;
+    right: 16px;
+    left: 16px;
+    transform: none;
+    width: auto;
+    z-index: 10000;
+    max-height: calc(100vh - 40px);
   }
 }
-.vertical-text {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%) rotate(-90deg);
-  top: 8px;
-  color: white;
-  font-size: 17px;
-  font-weight: 600;
-}
-.middle-section {
-  background: #4b4b4b;
-  height: 145px;
-  display: flex;
-  flex-direction: column;   /* ✅ stack text and icon */
-  align-items: center;       /* ✅ horizontal center */
-  justify-content: center;   /* ✅ vertical center */
+@media (max-width: 768px) {
+  .floating-arrow {
+    top: 55%; /* keep arrow at top on mobile if you want */
+  }
+
+  .floating-container {
+    top: 45%;
+  }
+
+  .contact-form-wrapper {
+    position: fixed;
+    top: 20px;
+    right: 16px;
+    left: 16px;
+    transform: none;         /* keep it aligned to top */
+    width: auto;
+    max-height: calc(100vh - 40px);
+    animation: none !important; /* stop fadeInForm interpolation on mobile */
+  }
 }
 
-/* Floating container */
-.floating-container {
-  position: fixed;
-  right: 0;
-  top: 40%;
-  transform: translateY(-50%);
-  background-color: #333;
-  border-radius: 12px 0 0 12px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 9999;
-  transition: all 0.3s ease;
+@media (max-width: 768px) {
+  /* Mail icon hover on mobile (tap effect) */
+  .mail-link:active .mail-icon,
+  .mail-link:hover .mail-icon {
+    color: #ffcc00;
+    transform: scale(1.1);
+  }
+
+  /* Whatsapp hover on mobile */
+  .whatsapp-section:active .whatsapp-icon,
+  .whatsapp-section:hover .whatsapp-icon {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+
+  /* Call hover on mobile */
+  .call-section:active .call-icon,
+  .call-section:hover .call-icon {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+
+  /* Floating Arrow hover on mobile */
+  .floating-arrow:active .arrow-icon,
+  .floating-arrow:hover .arrow-icon {
+    transform: scale(1.1);
+  }
 }
 
-.floating-container.closed {
-  right: -80px;
-}
 
-.floating-container.open {
-  right: 0;
-}
 
-/* Arrow button */
-.floating-arrow {
-  position: fixed;
-  right: 0;
-  top: 45%;
-  background: #000;
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  border-radius: 8px 0 0 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  z-index: 10000;
-}
 
-.arrow-icon.rotate {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease;
-}
-
-/* Middle Section */
-.middle-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #555;
-  padding: 20px;
-  position: relative;
-  height: 120px;
-  justify-content: flex-end;
-}
-
-/* Vertical text appears above the email icon */
-.vertical-text {
-  transform: rotate(-90deg);
-  transform-origin: center;
-  white-space: nowrap;
-  color: #fff;
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 1px;
-  position: absolute;
-  top: 40%; /* moves text above the icon */
-  left: 50%;
-  translate: -50% -50%;
-}
-
-/* Icons */
-.mail-icon {
-  font-size: 22px;
-  color: #fff;
-  margin-top: 65px; /* space between text and icon */
-}
-
-.whatsapp-section {
-  background: #25d366;
-  width: 100%;
-  text-align: center;
-  padding: 12px 0;
-}
-
-.whatsapp-icon {
-  font-size: 20px;
-  color: #fff;
-}
-
-.call-section {
-  background: #d32f2f;
-  width: 100%;
-  text-align: center;
-  padding: 12px 0;
-}
-
-.call-icon {
-  font-size: 16px;
-  color: #fff;
-}
-.mail-link {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mail-link:hover .mail-icon {
-  color: #ffcc00; /* Optional hover color */
-  transform: scale(1.1);
-  transition: all 0.2s ease;
-}
