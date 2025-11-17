@@ -489,14 +489,14 @@
 .faq-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 50px;
   flex-wrap: wrap;
 }
 
 .faq-left {
   flex: 1;
-  min-width: 500px;
+  min-width: 900px;
 }
 
 .faq-subtitle {
@@ -569,6 +569,7 @@
   padding: 40px 30px;
   text-align: center;
   border-radius: 6px;
+  
 }
 
 .consult-icon {
@@ -644,11 +645,27 @@
   .faq-container {
     flex-direction: column;
   }
+}
+@media (max-width: 480px) {
   .faq-left,
   .faq-right {
     min-width: 100%;
   }
 }
+@media (min-width: 481px) and (max-width: 993px) {
+  .faq-left,
+  .faq-right {
+    min-width: 725px;
+  }
+}
+@media (min-width: 994px) and (max-width: 1354px) {
+  .faq-left,
+  .faq-right {
+    min-width: 1px;
+  }
+}
+
+
 
 .faq-item-wrapper {
   margin-bottom: 20px;
@@ -683,6 +700,8 @@
     transform: translateY(0);
   }
 }
+
+
 
 /* ======================================== */
 /* FREE DESIGN CONSULTATION SECTION */

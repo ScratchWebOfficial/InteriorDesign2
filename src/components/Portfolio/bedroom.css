@@ -341,8 +341,10 @@
 
 /* FAQ SECTION */
 .faq-section {
-  max-width: 900px;
+  max-width: 100%;
   padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .faq-section h3 {
