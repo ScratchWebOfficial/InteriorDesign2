@@ -1,5 +1,6 @@
 import React from "react";
 import "./bedroom.css";
+import { useNavigate } from "react-router-dom";
 
 import img1 from "../../assets/bedroom1.jpg";
 import img2 from "../../assets/bedroom2.jpg";
@@ -19,8 +20,16 @@ import img15 from "../../assets/bedroom15.jpg";
 import img16 from "../../assets/bedroom16.jpg";
 
 const Bedroom = () => {
+
+  const navigate = useNavigate();
+
+  const goTo = (path) => {
+    navigate(path);
+  };
+
   return (
     <div className="bedroom-page">
+
       {/* HERO SECTION */}
       <section className="hero-section">
         <img src={img1} alt="Bedroom Hero" className="hero-image" />
@@ -30,20 +39,20 @@ const Bedroom = () => {
       {/* CATEGORY NAVIGATION */}
       <section className="category-nav">
         <ul>
-          <li className="active">BEDROOM INTERIORS</li>
-          <li>KITCHEN INTERIORS</li>
-          <li>DINING INTERIORS</li>
-          <li>LIVING AREA INTERIORS</li>
-          <li>DRAWING ROOM INTERIORS</li>
-          <li>TOILET INTERIORS</li>
-          <li>STUDY ROOM</li>
-          <li>KIDS ROOM</li>
-          <li>POOJA ROOM</li>
-          <li>ENTERTAINMENT ROOM</li>
-          <li>STAIRS</li>
-          <li>DOORS WINDOW</li>
-          <li>TV </li>
-          <li>FALSE CEILING</li>
+          <li className="active" onClick={() => goTo("/bedroom")}>BEDROOM INTERIORS</li>
+          <li onClick={() => goTo("/residential/kitchen")}>KITCHEN INTERIORS</li>
+          <li onClick={() => goTo("/dining")}>DINING INTERIORS</li>
+          <li onClick={() => goTo("/living-area")}>LIVING AREA INTERIORS</li>
+          <li onClick={() => goTo("/drawing-room")}>DRAWING ROOM INTERIORS</li>
+          <li onClick={() => goTo("/toilet")}>TOILET INTERIORS</li>
+          <li onClick={() => goTo("/study-room")}>STUDY ROOM</li>
+          <li onClick={() => goTo("/kids-room")}>KIDS ROOM</li>
+          <li onClick={() => goTo("/pooja-room")}>POOJA ROOM</li>
+          <li onClick={() => goTo("/entertainment-room")}>ENTERTAINMENT ROOM</li>
+          <li onClick={() => goTo("/stairs")}>STAIRS</li>
+          <li onClick={() => goTo("/doors-window")}>DOORS WINDOW</li>
+          <li onClick={() => goTo("/tv-cabinet")}>TV</li>
+          <li onClick={() => goTo("/false-ceiling")}>FALSE CEILING</li>
         </ul>
       </section>
 
@@ -128,6 +137,7 @@ const Bedroom = () => {
         <h4>Q3. Does Interior Design Wala provide online designs?</h4>
         <p>Yes. Interior design wala provide online design solutions for all interior designs.</p>
       </section>
+
     </div>
   );
 };
