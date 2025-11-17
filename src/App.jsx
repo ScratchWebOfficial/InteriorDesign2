@@ -17,6 +17,8 @@ import Preloader from "./components/Preloader/Preloader";
 import Bedroom from "./components/Portfolio/bedroom";
 import Kitchen from "./components/Portfolio/kitchen";
 import Toilet from "./components/Portfolio/Toilet";
+import Living from "./components/Portfolio/living";
+import Kids from "./components/Portfolio/kids";
 
 function App() {
 
@@ -58,6 +60,8 @@ function App() {
           <Route path="/residential/bedroom" element={<Bedroom />}/>
            <Route path="/residential/kitchen" element={<Kitchen />}/>
             <Route path="/residential/Toilet" element={<Toilet />}/>
+            <Route path="/residential/living" element={<Living />}/>
+            <Route path="/residential/kids" element={<Kids />}/>
       </Routes>
     </Router>
   );
