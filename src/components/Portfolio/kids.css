@@ -1,0 +1,109 @@
+/* KIDS PAGE BASE LAYOUT */
+.kids-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* HERO SECTION */
+.hero-section {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* CATEGORY NAVIGATION */
+.category-nav {
+  width: 100%;
+  background: #f3f3f3;
+  padding: 15px 0;
+}
+
+.category-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 30px 50px;
+  padding: 0 20px;
+}
+
+.category-nav li {
+  list-style: none !important;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #444;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+.category-nav li:hover {
+  color: #b30000;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+.category-nav .active {
+  color: #000 !important; /* Permanent Black */
+  font-weight: 700;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+.category-nav .active:hover {
+  color: #b30000 !important; /* Turn Red on Hover */
+}
+
+/* IMAGE GRID */
+.image-grid {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px 0;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+/* DESCRIPTION SECTION */
+.kids-description {
+  max-width: 1200px;
+  padding: 40px 20px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.kids-description p {
+  margin-bottom: 18px;
+}
+
+
