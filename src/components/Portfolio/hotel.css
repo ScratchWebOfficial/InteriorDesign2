@@ -1,0 +1,177 @@
+/* HERO SECTION */
+.office-hero {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.office-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.office-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+}
+
+.office-hero-title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+}
+
+.office-breadcrumb {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  color: white;
+  font-size: 16px;
+}
+
+.office-category-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 30px 0;
+  list-style: none;
+}
+
+.office-category-nav li {
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+}
+
+.office-category-nav .active {
+  color: red;
+}
+.office-gallery {
+  width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.office-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.office-gallery img:hover {
+  transform: scale(1.03);
+}
+/* OFFICE GALLERY – FIXED GRID */
+.office-gallery {
+  width: 100%;
+  max-width: 1200px;          /* same width as other sections */
+  margin: 40px auto;          /* center + space from nav */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;                  /* space between images */
+}
+
+.office-gallery img {
+  width: 100%;
+  height: 260px;              /* fixed height so rows align */
+  object-fit: cover;          /* crop nicely inside the box */
+  border-radius: 8px;
+  display: block;
+}
+@media (max-width: 900px) {
+  .office-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .office-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+.office-text-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.office-text-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: left;
+}
+
+.office-text-section p {
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.office-text-section strong {
+  color: #0077ff;
+  font-weight: 700;
+}
+.office-faq-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.office-faq-section h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.office-faq-section h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 25px;
+  color: #222;
+}
+
+.office-faq-section p {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.office-faq-section strong {
+  color: #0077ff;
+}
+/* HOTEL LONG TEXT SECTION BELOW GALLERY */
+.hotel-long-text {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto 80px;
+  padding: 0 20px;
+  line-height: 1.9;
+  font-size: 17px;
+  color: #333;
+}
+
+.hotel-long-text p {
+  margin-bottom: 18px;
+}

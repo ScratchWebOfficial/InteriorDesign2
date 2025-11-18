@@ -19,6 +19,9 @@ import Kitchen from "./components/Portfolio/kitchen";
 import Toilet from "./components/Portfolio/Toilet";
 import Living from "./components/Portfolio/living";
 import Kids from "./components/Portfolio/kids";
+import Office from "./components/Portfolio/office";
+import Showroom from "./components/Portfolio/showroom";
+import Hotel from "./components/Portfolio/hotel";
 
 function App() {
 
@@ -62,6 +65,11 @@ function App() {
             <Route path="/residential/Toilet" element={<Toilet />}/>
             <Route path="/residential/living" element={<Living />}/>
             <Route path="/residential/kids" element={<Kids />}/>
+            <Route path="/residential/living" element={<Living />}/>
+            <Route path="/commercial/offices" element={<Office />}/>
+            <Route path="/commercial/showrooms" element={<Showroom />}/>
+             <Route path="/commercial/offices" element={<Office />}/>
+            <Route path="/commercial/hotel" element={<Hotel />}/>
       </Routes>
     </Router>
   );
