@@ -39,14 +39,14 @@ const Bedroom = () => {
       {/* CATEGORY NAVIGATION */}
       <section className="category-nav">
         <ul>
-          <li className="active" onClick={() => goTo("/bedroom")}>BEDROOM INTERIORS</li>
+          <li className="active" onClick={() => goTo("/residential/bedroom")}>BEDROOM INTERIORS</li>
           <li onClick={() => goTo("/residential/kitchen")}>KITCHEN INTERIORS</li>
           <li onClick={() => goTo("/dining")}>DINING INTERIORS</li>
-          <li onClick={() => goTo("/living-area")}>LIVING AREA INTERIORS</li>
+          <li onClick={() => goTo("/residential/living")}>LIVING AREA INTERIORS</li>
           <li onClick={() => goTo("/drawing-room")}>DRAWING ROOM INTERIORS</li>
-          <li onClick={() => goTo("/toilet")}>TOILET INTERIORS</li>
+          <li onClick={() => goTo("/residential/Toilet")}>TOILET INTERIORS</li>
           <li onClick={() => goTo("/study-room")}>STUDY ROOM</li>
-          <li onClick={() => goTo("/kids-room")}>KIDS ROOM</li>
+          <li onClick={() => goTo("/residential/kids")}>KIDS ROOM</li>
           <li onClick={() => goTo("/pooja-room")}>POOJA ROOM</li>
           <li onClick={() => goTo("/entertainment-room")}>ENTERTAINMENT ROOM</li>
           <li onClick={() => goTo("/stairs")}>STAIRS</li>

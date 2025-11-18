@@ -22,6 +22,8 @@ import Kids from "./components/Portfolio/kids";
 import Office from "./components/Portfolio/office";
 import Showroom from "./components/Portfolio/showroom";
 import Hotel from "./components/Portfolio/hotel";
+import Hospital from "./components/Portfolio/hospitaL";
+import Resturant from "./components/Portfolio/resturant";
 
 function App() {
 
@@ -70,6 +72,8 @@ function App() {
             <Route path="/commercial/showrooms" element={<Showroom />}/>
              <Route path="/commercial/offices" element={<Office />}/>
             <Route path="/commercial/hotel" element={<Hotel />}/>
+            <Route path="/commercial/hospital" element={<Hospital />}/>
+             <Route path="/commercial/resturant" element={<Resturant />}/>
       </Routes>
     </Router>
   );
