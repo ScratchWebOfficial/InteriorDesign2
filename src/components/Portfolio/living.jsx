@@ -19,7 +19,7 @@ import img15 from "../../assets/living15.jpg";
 import img16 from "../../assets/living16.jpg";
 
 const Living = () => {
-  return (
+   return (
     <div className="living-page">
 
       {/* HERO SECTION */}

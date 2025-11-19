@@ -1,0 +1,78 @@
+/* HERO SECTION */
+.dining-hero {
+  width: 100%;
+  height: 360px;
+  position: relative;
+}
+
+.dining-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.65);
+}
+
+.dining-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dining-hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+}
+
+.dining-breadcrumb {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* CATEGORY NAVIGATION */
+.dining-category-nav {
+  text-align: center;
+  margin: 35px 0;
+}
+
+.dining-category-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dining-category-nav ul li {
+  display: inline-block;
+  margin: 10px 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.dining-category-nav ul li.active {
+  color: red;
+}
+
+/* DINING GALLERY */
+.dining-gallery {
+  width: 100%;
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.dining-gallery img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+}

@@ -21,7 +21,7 @@ import h13 from "../../assets/h13.png";
 import h14 from "../../assets/h14.png";
 import h15 from "../../assets/h15.png";
 
-const Office = () => {
+const hotel = () => {
   const navigate = useNavigate();
 
   const goTo = (path) => {
@@ -84,4 +84,4 @@ const Office = () => {
   );
 };
 
-export default Office;
+export default hotel;

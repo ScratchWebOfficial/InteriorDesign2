@@ -22,6 +22,7 @@ import Kids from "./components/Portfolio/kids";
 import Office from "./components/Portfolio/office";
 import Showroom from "./components/Portfolio/showroom";
 import Hotel from "./components/Portfolio/hotel";
+import Dining from "./components/Portfolio/dining";
 
 function App() {
 
@@ -70,6 +71,7 @@ function App() {
             <Route path="/commercial/showrooms" element={<Showroom />}/>
              <Route path="/commercial/offices" element={<Office />}/>
             <Route path="/commercial/hotel" element={<Hotel />}/>
+            <Route path="/dining" element={<Dining />}/>
       </Routes>
     </Router>
   );
