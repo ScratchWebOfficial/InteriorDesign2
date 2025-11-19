@@ -23,6 +23,8 @@ import Office from "./components/Portfolio/office";
 import Showroom from "./components/Portfolio/showroom";
 import Hotel from "./components/Portfolio/hotel";
 import Dining from "./components/Portfolio/dining";
+import Hospital from "./components/Portfolio/hospitaL";
+import Resturant from "./components/Portfolio/resturant";
 
 function App() {
 
@@ -72,6 +74,8 @@ function App() {
              <Route path="/commercial/offices" element={<Office />}/>
             <Route path="/commercial/hotel" element={<Hotel />}/>
             <Route path="/dining" element={<Dining />}/>
+            <Route path="/commercial/hospital" element={<Hospital />}/>
+             <Route path="/commercial/resturant" element={<Resturant />}/>
       </Routes>
     </Router>
   );

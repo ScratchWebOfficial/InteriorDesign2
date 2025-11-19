@@ -55,8 +55,8 @@
 }
 
 .category-nav .active {
-  font-weight: bold;
-  border-bottom: 2px solid #000;
+  font-weight: 800;
+  color: red;
 }
 
 /* IMAGE GRID */
@@ -259,8 +259,8 @@
 /* CATEGORY NAVIGATION */
 .category-nav {
   width: 100%;
-  background: #f3f3f3;
-  padding: 15px 0;
+  background: #fff;
+  padding: 20px ;
 }
 
 .category-nav ul {
@@ -268,23 +268,21 @@
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
-  gap: 30px 50px;
-  padding: 0 20px;
+  gap: 35px 65px;
+  padding:0;
 }
 
 .category-nav li {
   list-style: none !important;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   text-transform: uppercase;
   color: #444;
-  text-decoration: none !important;
-  border-bottom: none !important;
 }
 
 .category-nav li:hover {
-  color: #b30000;
+  color:red;
   text-decoration: none !important;
   border-bottom: none !important;
 }
@@ -294,15 +292,15 @@
 }
 
 .category-nav .active {
-  color: #000 !important; /* Permanent Black */
+  color:red;
   font-weight: 700;
   text-decoration: none !important;
   border-bottom: none !important;
 }
 
-.category-nav .active:hover {
-  color: #b30000 !important; /* Turn Red on Hover */
-}
+/* .category-nav .active:hover {
+  color: #b30000 !important;
+  }*/
 
 /* IMAGE GRID */
 .image-grid {

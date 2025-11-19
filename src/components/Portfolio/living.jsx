@@ -17,15 +17,46 @@ import img13 from "../../assets/living13.jpg";
 import img14 from "../../assets/living14.jpg";
 import img15 from "../../assets/living15.jpg";
 import img16 from "../../assets/living16.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Living = () => {
-   return (
+
+  const navigate = useNavigate()
+
+  const goTo = (path) => {
+    navigate(path);
+  };
+
+  return (
     <div className="living-page">
 
       {/* HERO SECTION */}
       <section className="hero-section">
         <img src={img1} alt="Living Room Hero" className="hero-image" />
         <h1 className="hero-title">LIVING ROOM INTERIORS</h1>
+      </section>
+
+      {/* CATEGORY NAVIGATION */}
+      <section className="kitchen-category-nav">
+        <ul>
+
+          <li className="active" onClick={() => goTo("/residential/living")}>LIVING AREA INTERIORS</li>
+
+          <li onClick={() => goTo("/residential/bedroom")}>BEDROOM INTERIORS</li>
+          <li onClick={() => goTo("/dining")}>DINING INTERIORS</li>
+          <li onClick={() => goTo("/residential/kitchen")}>KITCHEN INTERIORS</li>
+          <li onClick={() => goTo("/drawing-room")}>DRAWING ROOM INTERIORS</li>
+          <li onClick={() => goTo("/residential/Toilet")}>TOILET INTERIORS</li>
+          <li onClick={() => goTo("/study-room")}>STUDY ROOM</li>
+          <li onClick={() => goTo("/residential/kids")}>KIDS ROOM</li>
+          <li onClick={() => goTo("/pooja-room")}>POOJA ROOM</li>
+          <li onClick={() => goTo("/entertainment-room")}>ENTERTAINMENT ROOM</li>
+          <li onClick={() => goTo("/stairs")}>STAIRS</li>
+          <li onClick={() => goTo("/doors-window")}>DOORS WINDOW</li>
+          <li onClick={() => goTo("/tv-cabinet")}>TV CABINET</li>
+          <li onClick={() => goTo("/false-ceiling")}>FALSE CEILING</li>
+
+        </ul>
       </section>
 
       {/* IMAGE GROUP 1 */}

@@ -52,13 +52,13 @@ const Showroom = () => {
       <section className="showroom-category-nav">
         <ul>
           <li className="active">SHOWROOM INTERIORS</li>
-          <li onClick={() => goTo("/residential/kitchen")}>SALON/PARLOR INTERIORS</li>
-          <li onClick={() => goTo("/residential/bedroom")}>GYM/YOGA CENTER INTERIORS</li>
-          <li onClick={() => goTo("/dining")}>SCHOOL/COLLEGE INTERIORS</li>
-          <li onClick={() => goTo("/living-area")}>HOSPITAL/CLINIC INTERIORS</li>
-          <li onClick={() => goTo("/toilet")}>RESTAURANT INTERIORS</li>
-          <li onClick={() => goTo("/study-room")}>HOTEL INTERIORS</li>
-          <li onClick={() => goTo("/office")}>OFFICE INTERIORS</li>
+          <li onClick={() => goTo("/salon")}>SALON/PARLOR INTERIORS</li>
+          <li onClick={() => goTo("/gym")}>GYM/YOGA CENTER INTERIORS</li>
+          <li onClick={() => goTo("/school")}>SCHOOL/COLLEGE INTERIORS</li>
+          <li onClick={() => goTo("/commercial/hospital")}>HOSPITAL/CLINIC INTERIORS</li>
+          <li onClick={() => goTo("/commercial/resturant")}>RESTAURANT INTERIORS</li>
+          <li onClick={() => goTo("/commercial/hotel")}>HOTEL INTERIORS</li>
+          <li onClick={() => goTo("/commercial/offices")}>OFFICE INTERIORS</li>
         </ul>
       </section>
 
