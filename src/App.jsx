@@ -27,9 +27,10 @@ import Hospital from "./components/Portfolio/hospitaL";
 import Resturant from "./components/Portfolio/resturant";
 import Entertain from "./components/Portfolio/entertain";
 import Pooja from "./components/Portfolio/pooja";
-
 import Drawing from "./components/Portfolio/drawing";
 import Study from "./components/Portfolio/study";
+import Door from "./components/Portfolio/door";
+
 
 function App() {
 
@@ -83,9 +84,9 @@ function App() {
              <Route path="/commercial/resturant" element={<Resturant />}/>
               <Route path="/entertainment-room" element={<Entertain />}/>
               <Route path="/pooja-room" element={<Pooja />}/>
-
              <Route path="/drawing-room" element={<Drawing />}/>
              <Route path="/study-room" element={<Study />}/>
+             <Route path="/doors-window" element={<Door />}/>
       </Routes>
     </Router>
   );
