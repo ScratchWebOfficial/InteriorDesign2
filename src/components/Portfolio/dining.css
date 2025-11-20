@@ -76,3 +76,40 @@
   object-fit: cover;
   border-radius: 12px;
 }
+/* DINING GALLERY (CENTERED LIKE YOUR UI) */
+.dining-gallery {
+  width: 100%;
+  max-width: 1200px;        /* keeps gallery centered */
+  margin: 40px auto;        /* centers the entire gallery */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+  gap: 28px;                /* space between images */
+  justify-content: center;  /* ensures grid stays centered */
+}
+
+.dining-gallery img {
+  width: 100%;
+  height: 360px;            /* fixed height like screenshot */
+  object-fit: cover;
+  border-radius: 14px;      /* rounded like screenshot */
+  display: block;
+}
+/* DINING TEXT SECTION */
+.dining-text-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.dining-text-section p {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.dining-text-section strong {
+  color: #0077ff;
+  font-weight: 700;
+}

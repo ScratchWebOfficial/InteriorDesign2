@@ -25,6 +25,9 @@ import Hotel from "./components/Portfolio/hotel";
 import Dining from "./components/Portfolio/dining";
 import Hospital from "./components/Portfolio/hospitaL";
 import Resturant from "./components/Portfolio/resturant";
+import Entertain from "./components/Portfolio/entertain";
+import Pooja from "./components/Portfolio/pooja";
+
 
 function App() {
 
@@ -76,6 +79,9 @@ function App() {
             <Route path="/dining" element={<Dining />}/>
             <Route path="/commercial/hospital" element={<Hospital />}/>
              <Route path="/commercial/resturant" element={<Resturant />}/>
+              <Route path="/entertainment-room" element={<Entertain />}/>
+              <Route path="/pooja-room" element={<Pooja />}/>
+
       </Routes>
     </Router>
   );
