@@ -32,10 +32,11 @@ import Study from "./components/Portfolio/study";
 import Door from "./components/Portfolio/door";
 import Tv from "./components/Portfolio/tv";
 import Gym from "./components/Portfolio/gym";
-
 import Stairs from "./components/Portfolio/stairs";
 import False from "./components/Portfolio/false";
 import Salon from "./components/Portfolio/salon";
+import School from "./components/Portfolio/school";
+
 
 function App() {
 
@@ -97,6 +98,7 @@ function App() {
              <Route path="/stairs" element={<Stairs />}/>
              <Route path="/false-ceiling" element={<False />}/>
              <Route path="/salon" element={<Salon />}/>
+             <Route path="/school" element={<School />}/>
       </Routes>
     </Router>
   );

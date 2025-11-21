@@ -67,6 +67,7 @@ const FloatingBar = () => {
         <a
           href="https://wa.me/919312739997"
           className="whatsapp-section"
+          data-label="WhatsApp"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -74,7 +75,7 @@ const FloatingBar = () => {
         </a>
 
         {/* CALL */}
-        <a href="tel:+919990155566" className="call-section">
+        <a href="tel:+919990155566" className="call-section" data-label="Call Now">
           <FaPhoneAlt className="call-icon" />
         </a>
       </div>
