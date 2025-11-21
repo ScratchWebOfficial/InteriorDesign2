@@ -30,6 +30,8 @@ import Pooja from "./components/Portfolio/pooja";
 import Drawing from "./components/Portfolio/drawing";
 import Study from "./components/Portfolio/study";
 import Door from "./components/Portfolio/door";
+import Tv from "./components/Portfolio/tv";
+import Gym from "./components/Portfolio/gym";
 
 
 function App() {
@@ -87,6 +89,8 @@ function App() {
              <Route path="/drawing-room" element={<Drawing />}/>
              <Route path="/study-room" element={<Study />}/>
              <Route path="/doors-window" element={<Door />}/>
+             <Route path="/tv-cabinet" element={<Tv />}/>
+              <Route path="/gym" element={<Gym />}/>
       </Routes>
     </Router>
   );
