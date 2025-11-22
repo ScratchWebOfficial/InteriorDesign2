@@ -39,6 +39,9 @@ import Footer from "./components/Footer/Footer";
 import School from "./components/Portfolio/school";
 import Vastu from "./components/Footer/vastu";
 
+import Associates from "./components/Footer/associates";
+import Privacy from "./components/Footer/privacy";
+import Terms from "./components/Footer/terms";
 
 function App() {
 
@@ -103,6 +106,9 @@ function App() {
              <Route path="/salon" element={<Salon />}/>
              <Route path="/school" element={<School />}/>
              <Route path="/vastu" element={<Vastu />}/>
+             <Route path="/associates" element={<Associates />}/>
+             <Route path="/privacy-policy" element={<Privacy />}/>
+             <Route path="/terms"element={<Terms />}/>
       </Routes>
       <Footer/>
     </Router>
