@@ -1,0 +1,163 @@
+.associates-page {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* ---------------- HERO ---------------- */
+.associates-hero {
+  width: 100%;
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.associates-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.breadcrumb {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hero-text {
+  text-align: center;
+  margin: 25px auto;
+  width: 80%;
+  font-size: 18px;
+  color: #555;
+}
+
+/* ---------------- CONTENT ---------------- */
+.associates-content {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 60px auto;
+  align-items: center;
+}
+
+.text-part {
+  width: 55%;
+}
+
+.text-part h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.text-part p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.img-part img {
+  width: 420px;
+}
+
+/* ---------------- APPOINTMENT ---------------- */
+.appointment-section {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 60px auto;
+  align-items: center;
+}
+
+.appointment-img img {
+  width: 480px;
+}
+
+.appointment-form {
+  width: 45%;
+  background: white;
+  padding: 40px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  border-radius: 6px;
+}
+
+.appointment-form h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.appointment-form p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.row input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.bhk-options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.captcha {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.captcha input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 120px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #e41e24;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* button:hover {
+  background: #c2181d;
+} */

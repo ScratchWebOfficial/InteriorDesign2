@@ -84,7 +84,7 @@ const Footer = () => {
         <div className="footer-links footer-links-right">
           <ul>
             <li onClick={() => goTo("/associates")}><span>+</span> Associates</li>
-            <li onClick={() => goTo("/careers")}><span>+</span> Careers</li>
+            <li onClick={() => goTo("/career")}><span>+</span> Careers</li>
             <li onClick={() => goTo("/privacy-policy")}><span>+</span> Privacy Policy</li>
             <li onClick={() => goTo("/terms")}><span>+</span> Terms & Conditions</li>
             <li onClick={() => goTo("/faq")}><span>+</span> Faq</li>
