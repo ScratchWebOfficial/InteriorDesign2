@@ -36,6 +36,8 @@ import Gym from "./components/Portfolio/gym";
 import Stairs from "./components/Portfolio/stairs";
 import False from "./components/Portfolio/false";
 import Salon from "./components/Portfolio/salon";
+import Footer from "./components/Footer/Footer";
+
 
 function App() {
 
@@ -58,6 +60,7 @@ function App() {
 
 
   return (
+    <>
     <Router>
       <TopBar />
       <Navbar />
@@ -98,7 +101,10 @@ function App() {
              <Route path="/false-ceiling" element={<False />}/>
              <Route path="/salon" element={<Salon />}/>
       </Routes>
+      <Footer/>
     </Router>
+    </>
+    
   );
 }
 
