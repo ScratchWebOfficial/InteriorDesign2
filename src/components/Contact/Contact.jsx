@@ -170,7 +170,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* ✅ Career Opportunities Section */}
+      {/*  Career Opportunities Section */}
       <section
         className="career-section"
         style={{ backgroundImage: `url(${careerBg})` }}

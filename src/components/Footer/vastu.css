@@ -1,0 +1,789 @@
+.vastu-page {
+  width: 100%;
+}
+
+/* HERO SECTION */
+.vastu-hero {
+  position: relative;
+  height: 55vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vastu-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(65%);
+}
+
+.vastu-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.vastu-title {
+  position: absolute;
+  font-size: 52px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  z-index: 2;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.vastu-breadcrumb {
+  position: absolute;
+  bottom: 45px;
+  left: 70px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  z-index: 2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .vastu-title {
+    font-size: 32px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .vastu-breadcrumb {
+    left: 20px;
+    bottom: 30px;
+    font-size: 14px;
+  }
+}
+/* TEXT SECTION */
+.vastu-text-section {
+  background: #fceeea;        /* Light peach background (same as screenshot) */
+  padding: 60px 100px;
+  text-align: center;
+  line-height: 1.9;
+  font-size: 18px;
+  color: #4a4a4a;
+  font-family: "Poppins", sans-serif;
+}
+
+.vastu-text-section p {
+  margin-bottom: 25px;
+}
+/* ---- VASTU SUBSECTION ---- */
+
+.vastu-subsection {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.vastu-sub-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #ff2e2e;
+  margin-bottom: 20px;
+}
+
+.vastu-options p {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2e2e2e;
+  margin: 10px 0;
+}
+
+.vastu-main-heading {
+  margin-top: 30px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff2e2e;
+}
+.vastu-office {
+  width: 100%;
+  padding: 60px 10%;
+}
+
+.vastu-office-title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.vastu-office-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.vastu-office-points {
+  width: 55%;
+  list-style: disc;
+  padding-left: 25px;
+  font-size: 18px;
+  line-height: 34px;
+  color: #333;
+}
+
+.vastu-office-image {
+  width: 45%;
+}
+
+.vastu-office-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+  .vastu-office-container {
+    flex-direction: column;
+  }
+  .vastu-office-points,
+  .vastu-office-image {
+    width: 100%;
+  }
+}
+/* ================= HERO SECTION ================= */
+.vastu-page {
+  width: 100%;
+  background: #fff9f7;
+  font-family: "Poppins", sans-serif;
+}
+
+.vastu-hero {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.vastu-hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  filter: brightness(65%);
+}
+
+.vastu-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vastu-title {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.vastu-breadcrumb {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  color: white;
+  font-size: 16px;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+
+/* =================== TEXT SECTION =================== */
+.vastu-text-section {
+  padding: 60px 120px;
+  text-align: center;
+  color: #444;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.vastu-text-section p {
+  margin-bottom: 25px;
+}
+
+
+/* =================== VASTU SUB-HEADING =================== */
+.vastu-subsection {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.vastu-sub-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ff3b3b;
+  margin-bottom: 20px;
+}
+
+.vastu-options p {
+  font-size: 18px;
+  margin: 5px 0;
+  font-weight: 500;
+  color: #333;
+}
+
+.vastu-main-heading {
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ff2626;
+}
+
+
+/* ==================== VASTU FOR OFFICE — SECTION 1 ==================== */
+.vastu-office {
+  padding: 60px 120px;
+}
+
+.vastu-office-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.vastu-office-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.vastu-office-points {
+  flex: 1.1;
+}
+
+.vastu-office-points li {
+  margin-bottom: 18px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.vastu-office-image {
+  flex: 1;
+  text-align: center;
+}
+
+.vastu-office-image img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ==================== VASTU OFFICE – SECTION 2 ==================== */
+
+.vastu-office-tips {
+  padding: 60px 120px;
+}
+
+.vastu-office-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.vastu-office-row .vastu-office-image img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.vastu-office-tips .vastu-office-points ul li {
+  margin-bottom: 15px;
+  font-size: 17px;
+  color: #444;
+  line-height: 1.7;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+@media(max-width: 1100px) {
+  .vastu-office-container,
+  .vastu-office-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vastu-office-image img,
+  .vastu-office-row .vastu-office-image img {
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 850px) {
+  .vastu-title {
+    font-size: 36px;
+  }
+
+  .vastu-text-section {
+    padding: 40px 30px;
+  }
+
+  .vastu-office,
+  .vastu-office-tips {
+    padding: 40px 30px;
+  }
+}
+
+@media(max-width: 500px) {
+  .vastu-title {
+    font-size: 28px;
+  }
+
+  .vastu-breadcrumb {
+    left: 20px;
+    font-size: 14px;
+  }
+}
+/* ==============================================
+   GLOBAL PAGE
+   ============================================== */
+.vastu-page {
+  width: 100%;
+  background: #fff7f5;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ==============================================
+   HERO SECTION
+   ============================================== */
+.vastu-hero {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.vastu-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.vastu-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vastu-title {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.vastu-breadcrumb {
+  position: absolute;
+  bottom: 25px;
+  left: 80px;
+  color: #fff;
+  font-size: 15px;
+}
+
+/* ==============================================
+   TEXT SECTION
+   ============================================== */
+.vastu-text-section {
+  width: 80%;
+  margin: 60px auto;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 15px;
+  color: #666;
+}
+
+.vastu-text-section p {
+  margin-bottom: 20px;
+}
+
+/* ==============================================
+   SUB SECTION
+   ============================================== */
+.vastu-subsection {
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.vastu-sub-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.vastu-options {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #222;
+}
+
+.vastu-main-heading {
+  margin-top: 25px;
+  color: #e53935;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* ==============================================
+   VASTU OFFICE SECTION (ROW 1 + ROW 2)
+   ============================================== */
+.vastu-office {
+  width: 85%;
+  margin: 50px auto;
+}
+
+.vastu-office-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* ROW STRUCTURE */
+.vastu-office-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  gap: 40px;
+}
+
+/* REVERSE ROW (IMAGE LEFT + POINTS RIGHT) */
+.vastu-row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* TEXT LIST */
+.vastu-office-points {
+  width: 50%;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+.vastu-office-points li {
+  margin-bottom: 12px;
+}
+
+/* IMAGE */
+.vastu-office-image {
+  width: 50%;
+}
+
+.vastu-office-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ==============================================
+   RESPONSIVE
+   ============================================== */
+@media (max-width: 1024px) {
+  .vastu-office-row {
+    flex-direction: column;
+  }
+
+  .vastu-office-image,
+  .vastu-office-points {
+    width: 100%;
+  }
+
+  .vastu-office-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .vastu-title {
+    font-size: 32px;
+  }
+
+  .vastu-text-section {
+    width: 90%;
+  }
+}
+.vastu-office-row.vastu-row-reverse {
+  flex-direction: row;
+}
+/* ===================== PAGE WRAPPER ===================== */
+.vastu-page {
+  width: 100%;
+  background: #fff8f6;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+/* ===================== HERO SECTION ===================== */
+.vastu-hero {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+}
+
+.vastu-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vastu-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.vastu-title {
+  position: absolute;
+  top: 38%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.vastu-breadcrumb {
+  position: absolute;
+  top: 59%;
+  text-align: left;
+  padding-left: 220px;
+  color: #fff;
+  font-size: 18px;
+}
+
+
+
+/* ===================== TEXT SECTION ===================== */
+.vastu-text-section {
+  width: 78%;
+  margin: 70px auto;
+  color: #444;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.vastu-text-section p {
+  margin-bottom: 18px;
+}
+
+
+
+/* ===================== SUB-SECTION ===================== */
+.vastu-subsection {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.vastu-sub-title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.vastu-options p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.vastu-main-heading {
+  margin-top: 18px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #e60000;
+}
+
+
+
+/* ===================== VASTU OFFICE SECTIONS ===================== */
+.vastu-office {
+  width: 85%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.vastu-office-title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+/* ROW SETUP */
+.vastu-office-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+/* Reverse row */
+.vastu-row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* TEXT LIST */
+.vastu-office-points {
+  width: 48%;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #333;
+}
+
+.vastu-office-points li {
+  margin-bottom: 12px;
+}
+
+/* IMAGE BOX */
+.vastu-office-image {
+  width: 48%;
+}
+
+.vastu-office-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+
+/* ===================== VASTU FOR MALL ===================== */
+.vastu-mall {
+  width: 85%;
+  margin: 80px auto;
+}
+
+.vastu-mall-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+  margin-bottom: 70px;
+}
+
+.vastu-mall-points {
+  width: 48%;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.7;
+}
+
+.vastu-mall-points li {
+  margin-bottom: 12px;
+}
+
+.vastu-mall-image {
+  width: 48%;
+}
+
+.vastu-mall-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+/* ===================== RESPONSIVE DESIGN ===================== */
+@media screen and (max-width: 992px) {
+  .vastu-office-row,
+  .vastu-mall-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vastu-office-points,
+  .vastu-office-image,
+  .vastu-mall-points,
+  .vastu-mall-image {
+    width: 100%;
+  }
+
+  .vastu-breadcrumb {
+    padding-left: 40px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .vastu-title {
+    font-size: 32px;
+  }
+
+  .vastu-text-section {
+    width: 90%;
+  }
+}
+/* Make reverse layout work for Mall section also */
+.vastu-mall-row.vastu-row-reverse {
+  flex-direction: row-reverse;
+}
+/* Mall section uses EXACT same layout as office section */
+
+/* Use office row styling */
+.vastu-mall .vastu-office-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+/* Left/Right layout same as office */
+.vastu-mall .vastu-row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Mall points use same style as office points */
+.vastu-mall .vastu-office-points {
+  width: 50%;
+  font-size: 16px;
+  line-height: 26px;
+  color: #444;
+}
+
+/* Mall images same size as office images */
+.vastu-mall .vastu-office-image {
+  width: 50%;
+}
+
+.vastu-mall .vastu-office-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}

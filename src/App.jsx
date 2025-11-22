@@ -37,6 +37,7 @@ import False from "./components/Portfolio/false";
 import Salon from "./components/Portfolio/salon";
 import Footer from "./components/Footer/Footer";
 import School from "./components/Portfolio/school";
+import Vastu from "./components/Footer/vastu";
 
 
 function App() {
@@ -101,6 +102,7 @@ function App() {
              <Route path="/false-ceiling" element={<False />}/>
              <Route path="/salon" element={<Salon />}/>
              <Route path="/school" element={<School />}/>
+             <Route path="/vastu" element={<Vastu />}/>
       </Routes>
       <Footer/>
     </Router>
