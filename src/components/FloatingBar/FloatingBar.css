@@ -360,3 +360,55 @@
   }
 }
 
+.whatsapp-section,
+.call-section {
+  position: relative;
+  width: 45px;
+  overflow: visible;
+}
+
+/* Label Box (hidden normally) */
+.whatsapp-section::after,
+.call-section::after {
+  content: attr(data-label);
+  position: absolute;
+  top: 0;
+  right: 45px;  /* always behind main box */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  white-space: nowrap;
+  border-radius: 12px 0 0 12px;
+  opacity: 0;
+  transform: translateX(20px); /* hide inside */
+  transition: transform 0.15s linear, opacity 0.15s linear;
+  pointer-events: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Colors */
+.whatsapp-section::after {
+  background: #25d366;
+}
+
+.call-section::after {
+  background: #e32121;
+}
+
+/* HOVER → Slide out instantly */
+.whatsapp-section:hover::after,
+.call-section:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Icon shift slightly on hover */
+.whatsapp-section:hover .whatsapp-icon,
+.call-section:hover .call-icon {
+  transform: translateX(-6px);
+  transition: transform 0.15s linear;
+}
+
