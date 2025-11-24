@@ -42,6 +42,7 @@ import Vastu from "./components/Footer/vastu";
 import Associates from "./components/Footer/associates";
 import Privacy from "./components/Footer/privacy";
 import Terms from "./components/Footer/terms";
+import Talk from "./components/Footer/talk";
 
 function App() {
 
@@ -109,6 +110,7 @@ function App() {
              <Route path="/associates" element={<Associates />}/>
              <Route path="/privacy-policy" element={<Privacy />}/>
              <Route path="/terms"element={<Terms />}/>
+             <Route path="/talk-to-designer"element={<Talk />}/>
       </Routes>
       <Footer/>
     </Router>

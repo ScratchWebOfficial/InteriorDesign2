@@ -50,13 +50,31 @@ const Footer = () => {
           <div className="footer-social">
             <span>Follow Us On:</span>
 
-            <FaFacebookF className="footer-social-icon" />
-            <FaTwitter className="footer-social-icon" />
-            <FaYoutube className="footer-social-icon" />
-            <FaPinterestP className="footer-social-icon" />
-            <FaInstagram className="footer-social-icon" />
-            <FaLinkedinIn className="footer-social-icon" />
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF className="footer-social-icon" />
+            </a>
+
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <FaTwitter className="footer-social-icon" />
+            </a>
+
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <FaYoutube className="footer-social-icon" />
+            </a>
+
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">
+              <FaPinterestP className="footer-social-icon" />
+            </a>
+
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="footer-social-icon" />
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn className="footer-social-icon" />
+            </a>
           </div>
+
 
           <p className="footer-check">
             For End to End Execution<br />
@@ -85,12 +103,12 @@ const Footer = () => {
           <ul>
             <li onClick={() => goTo("/associates")}><span>+</span> Associates</li>
             <li onClick={() => goTo("/career")}><span>+</span> Careers</li>
-            <li onClick={() => goTo("/privacy-policy")}><span>+</span> Privacy Policy</li>
-            <li onClick={() => goTo("/terms")}><span>+</span> Terms & Conditions</li>
             <li onClick={() => goTo("/faq")}><span>+</span> Faq</li>
             <li onClick={() => goTo("/site-map")}><span>+</span> Site Map</li>
             <li onClick={() => goTo("/vastu")}><span>+</span> Vastu for Interior</li>
             <li onClick={() => goTo("/turnkey-projects")}><span>+</span> Services</li>
+            <li onClick={() => goTo("/privacy-policy")}><span>+</span> Privacy Policy</li>
+            <li onClick={() => goTo("/terms")}><span>+</span> Terms & Conditions</li>
           </ul>
         </div>
 
