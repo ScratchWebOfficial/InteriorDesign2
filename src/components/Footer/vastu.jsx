@@ -126,17 +126,16 @@ const VastuInterior = () => {
      
  <section className="vastu-office">
 
-        <h2 className="vastu-office-title">VASTU FOR OFFICE</h2>
+        <h2 className="vastu-office-title">VASTU FOR MALL</h2>
 
         {/* ===== ROW 1 : POINTS LEFT + IMAGE RIGHT ===== */}
         <div className="vastu-office-row">
 
           <ul className="vastu-office-points">
-            <li>Avoid irregular shape of the plot while square or rectangle is best for office structure.</li>
-            <li>Water resource or element must be placed or installed in North-east of the office.</li>
-            <li>The main head or owner must face North while working or dealing with clientele.</li>
-            <li>Northern or eastern sides are suitable for executive and other staff.</li>
-            <li>Managers should sit in Southern or Western portion so they face North or East.</li>
+            <li>The Restaurant should be preferably in the South-West of the building and the Kitchen within it should be in the South-East.</li>
+            <li>Installation of Air-Conditioning(AC) Plant should be preferably in the South-East.</li>
+            <li>Generator, Transformer and other Electrical Installationscshould be done in the South-East </li>
+            <li>Toilet blocks should be in the North-East.</li>
           </ul>
 
           <div className="vastu-office-image">
@@ -154,30 +153,28 @@ const VastuInterior = () => {
           </div>
 
           <ul className="vastu-office-points">
-            <li>North-east portion of office should be left empty with water resource installed.</li>
-            <li>Toilets should be built in West or North-west; avoid South-east and North-east.</li>
-            <li>Pantry should be constructed in South-east.</li>
-            <li>Reception must be designed in North-east.</li>
-            <li>Waiting room should be in North-west or North-east.</li>
-            <li>Office colours should be pleasing and bright to avoid dullness.</li>
-            <li>Avoid war or negative pictures; use positive and attractive paintings.</li>
+            <li>Landscaping and Fountains or Artificial Water Falls can be Constructed in the North-East, North or East  of the entire site.</li>
+            <li>Theatres should have a slope or the  arrangements of the seats such that the screen is in North or the East.</li>
+            <li>The Central part of the Building should have enough lighting from the Top (Skylight).</li>
+           
           </ul>
         </div>
 
       </section>
  <section className="vastu-office">
 
-        <h2 className="vastu-office-title">VASTU FOR OFFICE</h2>
+        <h2 className="vastu-office-title">VASTU FOR INSTITUTION</h2>
 
         {/* ===== ROW 1 : POINTS LEFT + IMAGE RIGHT ===== */}
         <div className="vastu-office-row">
 
           <ul className="vastu-office-points">
-            <li>Avoid irregular shape of the plot while square or rectangle is best for office structure.</li>
-            <li>Water resource or element must be placed or installed in North-east of the office.</li>
-            <li>The main head or owner must face North while working or dealing with clientele.</li>
-            <li>Northern or eastern sides are suitable for executive and other staff.</li>
-            <li>Managers should sit in Southern or Western portion so they face North or East.</li>
+            <li>Leave more space towards thje East and North-East while other parts like South, West and South-West must be used for construction.</li>
+            <li>Library in the institute can be made in Western portion.</li>
+            <li>Classrooms should be made with entrance in East and blackboard in West.</li>
+            <li>Beams in the classroom must be constructed carefully ensuring that no student sit under the beam.</li>
+            <li>Staff room be made in North-West.</li>
+            <li>Pantry canteen in the institute should be made in South-East corner.</li>
           </ul>
 
           <div className="vastu-office-image">
@@ -195,13 +192,12 @@ const VastuInterior = () => {
           </div>
 
           <ul className="vastu-office-points">
-            <li>North-east portion of office should be left empty with water resource installed.</li>
-            <li>Toilets should be built in West or North-west; avoid South-east and North-east.</li>
-            <li>Pantry should be constructed in South-east.</li>
-            <li>Reception must be designed in North-east.</li>
-            <li>Waiting room should be in North-west or North-east.</li>
-            <li>Office colours should be pleasing and bright to avoid dullness.</li>
-            <li>Avoid war or negative pictures; use positive and attractive paintings.</li>
+            <li>Owner or principal's office must be constructed in South-West or South direction only so that she/he can sit facing North.</li>
+            <li>Platform of teacher's desk must be made some feet high from the ground.</li>
+            <li>Meeting rooms must be situated in North with east facing door.</li>
+            <li>Open play ground should be constructed in the Eastern portion.</li>
+            <li>Reception and cashier room must be constructed in the Eastern portion.</li>
+           
           </ul>
         </div>
 
@@ -209,7 +205,51 @@ const VastuInterior = () => {
 
  <section className="vastu-office">
 
-        <h2 className="vastu-office-title">VASTU FOR OFFICE</h2>
+        <h2 className="vastu-office-title">VASTU FOR SCHOOL</h2>
+
+        {/* ===== ROW 1 : POINTS LEFT + IMAGE RIGHT ===== */}
+        <div className="vastu-office-row">
+
+          <ul className="vastu-office-points">
+            <li>Leave more space towards thje East and North-East while other parts like South, West and South-West must be used for construction.</li>
+            <li>Library in the institute can be made in Western portion.</li>
+            <li>Classrooms should be made with entrance in East and blackboard in West.</li>
+            <li>Beams in the classroom must be constructed carefully ensuring that no student sit under the beam.</li>
+            <li>Staff room be made in North-West.</li>
+            <li>Pantry canteen in the institute should be made in South-East corner.</li>
+          </ul>
+
+
+          <div className="vastu-office-image">
+            <img src={vastuOfficeImg} alt="Vastu Office" />
+          </div>
+        </div>
+
+
+
+        {/* ===== ROW 2 : IMAGE LEFT + POINTS RIGHT ===== */}
+        <div className="vastu-office-row vastu-row-reverse">
+
+          <div className="vastu-office-image">
+            <img src={vastuImg3} alt="Vastu Office Interior" />
+          </div>
+
+          <ul className="vastu-office-points">
+            <li>Owner or principal's office must be constructed in South-West or South direction only so that she/he can sit facing North.</li>
+            <li>Platform of teacher's desk must be made some feet high from the ground.</li>
+            <li>Meeting rooms must be situated in North with east facing door.</li>
+            <li>Open play ground should be constructed in the Eastern portion.</li>
+            <li>Reception and cashier room must be constructed in the Eastern portion.</li>
+           
+          </ul>
+          
+        </div>
+
+      </section>
+
+ <section className="vastu-office">
+
+        <h2 className="vastu-office-title">VASTU FOR CLINIC</h2>
 
         {/* ===== ROW 1 : POINTS LEFT + IMAGE RIGHT ===== */}
         <div className="vastu-office-row">
@@ -251,7 +291,7 @@ const VastuInterior = () => {
 
  <section className="vastu-office">
 
-        <h2 className="vastu-office-title">VASTU FOR OFFICE</h2>
+        <h2 className="vastu-office-title">VASTU FOR MARRIAGE HALL</h2>
 
         {/* ===== ROW 1 : POINTS LEFT + IMAGE RIGHT ===== */}
         <div className="vastu-office-row">
@@ -290,10 +330,9 @@ const VastuInterior = () => {
         </div>
 
       </section>
+       <section className="vastu-office">
 
- <section className="vastu-office">
-
-        <h2 className="vastu-office-title">VASTU FOR OFFICE</h2>
+        <h2 className="vastu-office-title">VASTU FOR HOSPITAL</h2>
 
         {/* ===== ROW 1 : POINTS LEFT + IMAGE RIGHT ===== */}
         <div className="vastu-office-row">
@@ -332,7 +371,91 @@ const VastuInterior = () => {
         </div>
 
       </section>
+       <section className="vastu-office">
 
+        <h2 className="vastu-office-title">VASTU FOR BANK</h2>
+
+        {/* ===== ROW 1 : POINTS LEFT + IMAGE RIGHT ===== */}
+        <div className="vastu-office-row">
+
+          <ul className="vastu-office-points">
+            <li>Avoid irregular shape of the plot while square or rectangle is best for office structure.</li>
+            <li>Water resource or element must be placed or installed in North-east of the office.</li>
+            <li>The main head or owner must face North while working or dealing with clientele.</li>
+            <li>Northern or eastern sides are suitable for executive and other staff.</li>
+            <li>Managers should sit in Southern or Western portion so they face North or East.</li>
+          </ul>
+
+          <div className="vastu-office-image">
+            <img src={vastuOfficeImg} alt="Vastu Office" />
+          </div>
+        </div>
+
+
+
+        {/* ===== ROW 2 : IMAGE LEFT + POINTS RIGHT ===== */}
+        <div className="vastu-office-row vastu-row-reverse">
+
+          <div className="vastu-office-image">
+            <img src={vastuImg3} alt="Vastu Office Interior" />
+          </div>
+
+          <ul className="vastu-office-points">
+            <li>North-east portion of office should be left empty with water resource installed.</li>
+            <li>Toilets should be built in West or North-west; avoid South-east and North-east.</li>
+            <li>Pantry should be constructed in South-east.</li>
+            <li>Reception must be designed in North-east.</li>
+            <li>Waiting room should be in North-west or North-east.</li>
+            <li>Office colours should be pleasing and bright to avoid dullness.</li>
+            <li>Avoid war or negative pictures; use positive and attractive paintings.</li>
+          </ul>
+        </div>
+
+      </section>
+       <section className="vastu-office">
+
+        <h2 className="vastu-office-title">VASTU FOR MULTIPLEX</h2>
+
+        {/* ===== ROW 1 : POINTS LEFT + IMAGE RIGHT ===== */}
+        <div className="vastu-office-row">
+
+          <ul className="vastu-office-points">
+            <li>Avoid irregular shape of the plot while square or rectangle is best for office structure.</li>
+            <li>Water resource or element must be placed or installed in North-east of the office.</li>
+            <li>The main head or owner must face North while working or dealing with clientele.</li>
+            <li>Northern or eastern sides are suitable for executive and other staff.</li>
+            <li>Managers should sit in Southern or Western portion so they face North or East.</li>
+          </ul>
+
+          <div className="vastu-office-image">
+            <img src={vastuOfficeImg} alt="Vastu Office" />
+          </div>
+        </div>
+
+
+
+        {/* ===== ROW 2 : IMAGE LEFT + POINTS RIGHT ===== */}
+        <div className="vastu-office-row vastu-row-reverse">
+
+          <div className="vastu-office-image">
+            <img src={vastuImg3} alt="Vastu Office Interior" />
+          </div>
+
+          <ul className="vastu-office-points">
+            <li>North-east portion of office should be left empty with water resource installed.</li>
+            <li>Toilets should be built in West or North-west; avoid South-east and North-east.</li>
+            <li>Pantry should be constructed in South-east.</li>
+            <li>Reception must be designed in North-east.</li>
+            <li>Waiting room should be in North-west or North-east.</li>
+            <li>Office colours should be pleasing and bright to avoid dullness.</li>
+            <li>Avoid war or negative pictures; use positive and attractive paintings.</li>
+          </ul>
+        </div>
+
+      </section>
+<h3 className="vastu-main-heading">
+          Vastu for Commercial units Interior
+        </h3>
 
     </div>
   );
