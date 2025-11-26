@@ -68,7 +68,7 @@ const VastuInterior = () => {
 
         <div className="vastu-options">
           <p>👉 Vastu for Commercial units Interior</p>
-          <p>👉 Vastu for Residential units Interior</p>
+          <p> Vastu for Residential units Interior</p>
         </div>
 
         <h3 className="vastu-main-heading">
