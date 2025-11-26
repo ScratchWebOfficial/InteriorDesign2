@@ -1189,6 +1189,94 @@ a { -webkit-touch-callout: none; }
 /* Optional: if you still see a colored ring in some browsers, force the outline-color */
 .navbar *:focus { outline-color: transparent; }
 
+/* ----------------------------
+   Safe dropdown — always visible
+   ---------------------------- */
+
+/* Keep the dropdown menu visible when it's rendered by React */
+.dropdown-menu {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  min-width: 220px;
+  z-index: 999;
+  opacity: 1;                 /* ensure visible */
+  transform: translateX(0);   /* default position */
+  transition: transform 180ms ease, opacity 180ms ease;
+  padding: 6px 0;
+}
+
+/* Add small right shift to the whole dropdown when it's present (subtle) */
+.dropdown:has(.dropdown-menu) > .dropdown-btn,
+.dropdown:has(.dropdown-menu) .dropdown-btn {
+  /* optional: slightly highlight/open state for trigger */
+  color: #d72027;
+}
+
+/* ----------------------------
+   When a submenu is rendered inside a .submenu-item,
+   slide that .submenu-item slightly to right (parent shift)
+   ---------------------------- */
+
+/* Parent item moves right when it contains a visible .submenu */
+.submenu-item:has(.submenu) {
+  transform: translateX(8px);
+  transition: transform 180ms ease;
+}
+
+/* The submenu itself appears slightly more to the right (nested) */
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: #fff;
+  min-width: 300px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(6px);      /* default small offset for nicer look */
+  opacity: 1;
+  transition: transform 200ms ease, opacity 180ms ease;
+  z-index: 1000;
+}
+
+/* If a submenu contains another submenu (deep nesting),
+   shift its parent a little more (for visual depth) */
+.submenu .submenu-item:has(.submenu) {
+  transform: translateX(12px);
+  transition: transform 180ms ease;
+}
+
+/* Links inside submenu — add a tiny padding shift when their submenu is open */
+.submenu-item:has(.submenu) > .submenu-label,
+.submenu-item:has(.submenu) > .submenu-label + .submenu {
+  padding-left: 6px;
+}
+
+/* Mobile safety: when submenu becomes static (mobile), keep transform none */
+@media (max-width: 900px) {
+  .submenu {
+    position: static;
+    transform: translateX(0);
+    box-shadow: none;
+  }
+  .submenu-item:has(.submenu) {
+    transform: none;
+  }
+}
+
+/* Accessibility: keep transitions smooth and not janky */
+.dropdown-menu a,
+.submenu a,
+.submenu-label {
+  transition: background-color 120ms ease, color 120ms ease;
+}
 
 
 
