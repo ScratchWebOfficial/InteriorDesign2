@@ -53,9 +53,7 @@ const Hero = () => {
             <h4 className="service-number">Service 1</h4>
             <h2 className="service-title">ONLINE INTERIOR DESIGNING</h2>
             <p className="service-desc">
-              Interior Design Wala provides cost-effective online interior design
-              assistance across India. Our experts help you visualize with 2D/3D
-              design rendering for the best interior solutions.
+              Interior Design Wala provides cost-effective online interior design services that work for Pan India. We offer virtual interior design assistance and share our expertise in both residential and commercial online interior design services. We are among the finest in the business at 3D design rendering, space management, and breaking down complicated environments via manageable 2-D design sketches. They include deep research and detailed analysis by our experts to give the best virtual reality experience in online interior design-as our clients say. So, say goodbye to inconvenient interiors and choose the best online interior design services from Interior Designwala to get the desired interior expertise.
             </p>
 
             <a className="how-it-works" href="#">
@@ -79,10 +77,9 @@ const Hero = () => {
 
           <div className="services-left">
             <h4 className="service-number">Service 2</h4>
-            <h2 className="service-title">TURNKEY PROJECTS (Delhi-NCR)</h2>
+            <h3 className="service-title">TURNKEY PROJECTS (Delhi-NCR)</h3>
             <p className="service-desc">
-              Full turnkey interior execution services including design,
-              supervision, installation, and material selection.
+              Turnkey Projects (Delhi NCR) Turnkey Projects referred to those in which a designer handles everything from drawing designing to execution and installation as per contract. Interiordesignwala.com also offers turnkey project service in Delhi NCR as of now. In this, we will be taking care of designing portion, material selection, cost estimation, site supervision, execution as well as installation. That means you just need to handover us your requirement and desires which you have for your home and we will make them a magnificent reality by our efforts.
             </p>
 
             <a className="how-it-works" href="#">

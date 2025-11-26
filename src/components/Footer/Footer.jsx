@@ -114,15 +114,16 @@ const Footer = () => {
 
         {/* SUBSCRIBE SECTION */}
         <div className="footer-subscribe">
-          <h3>Subscribe Us</h3>
+          <h3>Contact Us</h3>
 
           <div className="subscribe-wrap">
             <input type="email" placeholder="Email Address" />
-            <button>Subscribe →</button>
+            <button onClick={() => goTo("/contact")}>Contact →</button>
+
           </div>
 
           <p className="subscribe-note">
-            *Subscribe us and get latest news and updates
+            *Contact us and get latest news and updates
           </p>
         </div>
 
