@@ -1,11 +1,9 @@
 import React from "react";
 import "./faq.css";
-
 import img1 from "../../assets/hero22.jpg";
 
-const faq = () => {
+const Faq = () => {
 
-  // FAQ question groups for 4 blocks
   const faqBlock1 = [
     "How do I get started?",
     "What process you follow?",
@@ -48,7 +46,6 @@ const faq = () => {
 
   return (
     <div className="full-wrapper">
-
       {/* UI 1 - HERO BACKGROUND */}
       <section className="hero-section">
         <img src={img1} className="hero-bg" alt="Hero" />
@@ -65,56 +62,20 @@ const faq = () => {
         <p>Turnkey Projects (Delhi - NCR)</p>
       </section>
 
-      {/* UI 3 - FAQ BLOCK 1 */}
-      <section className="faq-section">
-        {faqBlock1.map((q, i) => (
-          <div className="faq-box" key={i}>
-            <p>{q}</p>
-            <div className="faq-icon">?</div>
-          </div>
-        ))}
-      </section>
-
-      {/* UI 4 - FAQ BLOCK 2 */}
-      <section className="faq-section">
-        {faqBlock2.map((q, i) => (
-          <div className="faq-box" key={i}>
-            <p>{q}</p>
-            <div className="faq-icon">?</div>
-          </div>
-        ))}
-      </section>
-
-      {/* UI 5 - DESIGNED & EXECUTED */}
-      <section className="designed-executed-section">
-        <img src={img5} alt="Designed Executed" className="designed-img" />
-      </section>
-
-      {/* UI 6 - FAQ BLOCK 3 */}
-      <section className="faq-section">
-        {faqBlock3.map((q, i) => (
-          <div className="faq-box" key={i}>
-            <p>{q}</p>
-            <div className="faq-icon">?</div>
-          </div>
-        ))}
-      </section>
-
-      {/* UI 7 - FAQ BLOCK 4 */}
-      <section className="faq-section">
-        {faqBlock4.map((q, i) => (
-          <div className="faq-box" key={i}>
-            <p>{q}</p>
-            <div className="faq-icon">?</div>
-          </div>
-        ))}
-      </section>
+      {/* UI 3 - FAQ BLOCKS */}
+      {[faqBlock1, faqBlock2, faqBlock3, faqBlock4].map((block, idx) => (
+        <section className="faq-section" key={idx}>
+          {block.map((q, i) => (
+            <div className="faq-box" key={i}>
+              <p>{q}</p>
+              <div className="faq-icon">?</div>
+            </div>
+          ))}
+        </section>
+      ))}
 
     </div>
   );
-  
 };
 
-export default faq;
-
-
+export default Faq;
