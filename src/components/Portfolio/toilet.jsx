@@ -111,14 +111,14 @@ const Toilet = () => {
   <p>
     It is important to remember safety when designing 
     <strong> bathroom interior design online.</strong> 
-    Thus Interior Design Wala, with its decade of service years in online interior design reinvent your bathing experience.
+    Thus Sahacarah Global Pvt. Ltd., with its decade of service years in online interior design reinvent your bathing experience.
   </p>
 
   <h3>FAQs</h3>
 
   <h4>Q1. Which tiles are used for flooring in a bathroom interior design?</h4>
   <p>
-    Interior Design Wala prefer using anti-skid tiles for bathroom flooring.
+    Sahacarah Global Pvt. Ltd. prefer using anti-skid tiles for bathroom flooring.
   </p>
 
   <h4>Q2. What is the transparent partition in the bathrooms called?</h4>
@@ -129,7 +129,7 @@ const Toilet = () => {
 
   <h4>Q3. Where can we get the best bathroom interior design online?</h4>
   <p>
-    Interior Design Wala provides the best online interior services as well as free quotations.
+    Sahacarah Global Pvt. Ltd. provides the best online interior services as well as free quotations.
   </p>
 
   <h4>Q4. What makes a bathroom interior look luxurious?</h4>

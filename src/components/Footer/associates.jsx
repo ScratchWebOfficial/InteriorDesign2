@@ -37,7 +37,7 @@ const Associates = () => {
           </p>
 
           <p>
-            Interiordesignwala.com believes in give and take process, hence you give the best you have and
+            Sahacarah Global Pvt. Ltd.  believes in give and take process, hence you give the best you have and
             we will provide you the best you need. To be a part of us, you can fill the form below, we
             definitely consider your valuable work and get back to you if required.
           </p>

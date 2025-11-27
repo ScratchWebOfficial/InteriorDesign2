@@ -94,7 +94,7 @@ const Tv = () => {
   <p>
     When it comes to set up your TV set in bedroom or in living space, the most tedious task 
     is to finding a place to put the television without compromising your furniture arrangement. 
-    It needs to be fitted without compromising your décor integrity. At Interiordesignwala, we 
+    It needs to be fitted without compromising your décor integrity. At Sahacarah Global Pvt. Ltd., we 
     know the best place to install your TV set. The TV set should be installed in a way so that 
     it is always at eye-level.
   </p>

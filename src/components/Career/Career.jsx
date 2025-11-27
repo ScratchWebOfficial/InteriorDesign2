@@ -112,7 +112,7 @@ const Career = () => {
               <span className="vacancies-label">VACANCIES</span>
               <h2 className="openings-title">CURRENT OPENINGS</h2>
               <p className="openings-intro">
-                We are an Sahacarah Global who believes in excellence, quality
+                We are an Sahacarah Global Pvt. Ltd. who believes in excellence, quality
                 and honesty — we design beautiful home interiors. If you want
                 to be part of a creative and dynamic team, explore our current
                 openings below.

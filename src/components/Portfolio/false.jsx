@@ -103,7 +103,7 @@ wonder to your present or new building home's style providing an entirely new lo
 
 </p>
 <p>
-    Interiordesignwala believes that your modern space will need false ceiling with smooth structural styles. Such a roof can be made of light and portable flooring with the material you choose such as fibreglass, vinyl-coated gypsum, or steel. This roof will be perfect in your youngster space or a cinema space, as it will reduce the noise into the room. Contact us to know how we could help you in having a false ceiling designs online right for your home.
+    Sahacarah Global Pvt. Ltd. believes that your modern space will need false ceiling with smooth structural styles. Such a roof can be made of light and portable flooring with the material you choose such as fibreglass, vinyl-coated gypsum, or steel. This roof will be perfect in your youngster space or a cinema space, as it will reduce the noise into the room. Contact us to know how we could help you in having a false ceiling designs online right for your home.
 </p>
       </section>
 

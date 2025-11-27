@@ -23,7 +23,7 @@ const Talk = () => {
         <div className="text-part">
           <h2>Associates</h2>
           <p>
-            Designing a home must be easy going for you, hence we are here to assist you for the same. Interiordesignwala.com makes the designing process easy and fun for you, so that you love designing and home itself. To know more about us, you can easily connect to us, our highly talented designers will assist you for your each and every question and will come with a great idea for you exclusively.
+            Designing a home must be easy going for you, hence we are here to assist you for the same. Sahacarah Global Pvt. Ltd. makes the designing process easy and fun for you, so that you love designing and home itself. To know more about us, you can easily connect to us, our highly talented designers will assist you for your each and every question and will come with a great idea for you exclusively.
 
 
           </p>

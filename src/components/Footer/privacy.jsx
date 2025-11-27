@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
       <div className="privacy-container">
         <h2 className="section-title">OUR POLICY</h2>
         <p className="section-text">
-          Interiordesignwala.com is strongly committed to preserving the privacy of its
+          Sahacarah Global Pvt. Ltd. is strongly committed to preserving the privacy of its
           customers. This privacy statement lets you know about our policies for the
           collection and use of information about you and contracts we are doing with you.
         </p>
@@ -48,12 +48,12 @@ const PrivacyPolicy = () => {
           All of our transactions automatically take place on a secure server. All of your
           personal information is encrypted before it is transmitted over the Internet. None of
           our customers has ever reported fraudulent use of a credit card as a result of
-          purchases made at Interiordesignwala.com
+          purchases made at Sahacarah Global Pvt. Ltd.
         </p>
 
         <p className="section-text center">
           For any queries, contact our support team. <br />
-          +91-99901 55566 /care@interiordesignwala.com
+          +91-99901 55566 /fitnfixsolutions@gmail.com
         </p>
       </div>
     </>

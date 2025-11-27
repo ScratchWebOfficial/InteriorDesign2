@@ -76,7 +76,7 @@ const Dining = () => {
 <section className="dining-text-section">
   <p>
     Our <strong>interior design ideas for study room</strong> that reflects your inquisitiveness to learn new things. 
-    It’s a corner that needs to be designed and set up intelligently. Interiordesignwala understands how you 
+    It’s a corner that needs to be designed and set up intelligently. Sahacarah Global Pvt. Ltd. understands how you 
     want to have a clam and quite study room without any noise or disturbance. Our team of interior designers 
     takes even every single detail very seriously. They start it from putting study tables and chair in place to 
     give your study room a clutter free look. They customise your study table as per your requirements and on the 

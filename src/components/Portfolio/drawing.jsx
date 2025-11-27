@@ -92,9 +92,9 @@ const Drawing = () => {
         <h2>Live Life King Size with Modern Drawing Room Designs</h2>
 
         <p>
-          Interior Designwala allows bringing the most out of the space and the best of the style while conceptualizing any drawing room interior design. Our designers have hands-on experience in designing modern, traditional, bohemian, Victorian etc and whatnot styles in giving homes a cosy and thematic appearance. Our speciality in bringing life to the rooms with our artistic wall designs, modern modular furniture, ambient lighting etc makes the spaces luxurious and creates your aura.
+          Sahacarah Global Pvt. Ltd. allows bringing the most out of the space and the best of the style while conceptualizing any drawing room interior design. Our designers have hands-on experience in designing modern, traditional, bohemian, Victorian etc and whatnot styles in giving homes a cosy and thematic appearance. Our speciality in bringing life to the rooms with our artistic wall designs, modern modular furniture, ambient lighting etc makes the spaces luxurious and creates your aura.
 
-Interiordesignwala believes that if you have the ability you can make each corner speak about its beauty and you can do it by giving it an extra grace, whether it's a bedroom or a drawing room. While conceptualizing drawing room interior ideas there are certain key points to remember.
+ Sahacarah Global Pvt. Ltd. believes that if you have the ability you can make each corner speak about its beauty and you can do it by giving it an extra grace, whether it's a bedroom or a drawing room. While conceptualizing drawing room interior ideas there are certain key points to remember.
         </p>
 
         <p>
@@ -105,13 +105,13 @@ Interiordesignwala believes that if you have the ability you can make each corne
         </p>
 
         <p>
-          Interiordesignwala.com gives you the best possible spacious and stylish comfy drawing room décor ideas. We take care of your space requirement and manage it effortlessly to obtain a wonderful outcome.
+          Sahacarah Global Pvt. Ltd. you the best possible spacious and stylish comfy drawing room décor ideas. We take care of your space requirement and manage it effortlessly to obtain a wonderful outcome.
         </p>
 
         <h3>FAQs</h3>
 
         <h4>Q1. Where can we get the best interior designs?</h4>
-  <p>At InteriorDesignWala you can get best<strong>interior designs</strong>  online and execute the drawings at your own pace.</p>
+  <p>At Sahacarah Global Pvt. Ltd. you can get best<strong>interior designs</strong>  online and execute the drawings at your own pace.</p>
 
   <h4>Q2. How to lower the cost of interior designs?</h4>
   <p>Most interior designing firms charge extra for their expertise in design and execution. A smart approach is to get design specifications from a designer and then execute them with local contractors to reduce cost.</p>

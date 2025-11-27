@@ -1188,7 +1188,3 @@ a { -webkit-touch-callout: none; }
 
 /* Optional: if you still see a colored ring in some browsers, force the outline-color */
 .navbar *:focus { outline-color: transparent; }
-
-
-
-

@@ -70,7 +70,7 @@ const Contact = () => {
         <p>
           We know that interior designing can be tricky for you and you must be
           dealing with various unanswered questions and confusions. No need to
-          worry, InteriorDesignWala.com welcomes your questions and our
+          worry, we welcomes your questions and our
           representatives are ready to answer each one of them. You can email us
           at:{" "}
           <a href="mailto:fitnfixsolutions@gmail.com" className="highlight">
@@ -117,6 +117,11 @@ const Contact = () => {
                 <input type="text" placeholder="Location" required />
                 <div className="radio-group">
                     <label>
+                      
+                    <input type="radio" name="projectType" /> 1 BHK
+                  </label>
+                  <label>
+                      
                     <input type="radio" name="projectType" /> 2 BHK
                   </label>
                   <label>

@@ -102,7 +102,7 @@ const Bedroom = () => {
           its comfort. Yes! That’s the power of a fine home interior.
         </p>
 
-        <h3>Interior design wala focus on following key points in bedroom makeovers</h3>
+        <h3>Sahacarah Global Pvt. Ltd. focus on following key points in bedroom makeovers</h3>
         <ul>
           <li>Create budget-oriented design solutions.</li>
           <li>Provide maximum storage space in <strong>small bedroom interior designs</strong>.</li>

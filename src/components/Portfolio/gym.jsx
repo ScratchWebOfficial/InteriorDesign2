@@ -87,7 +87,7 @@ const Gym = () => {
   <h2 className="gym-text-title">Gym Interior Design Online</h2>
 
   <p>
-    The frequenting population is also increasing use of gym and yoga centres. Being fit and healthy is a priority for many working males and females. At InteriorDesignWala, we enhance your fitness with extraordinary gym and yoga centre interior designing. We help your clients with graceful interior and bleached-out designs. Transforming gym and yoga centres into new designs is a key to attract clients. A perfect looking centre can attract more and more fitness enthusiasts easily. 
+    The frequenting population is also increasing use of gym and yoga centres. Being fit and healthy is a priority for many working males and females. At Sahacarah Global Pvt. Ltd., we enhance your fitness with extraordinary gym and yoga centre interior designing. We help your clients with graceful interior and bleached-out designs. Transforming gym and yoga centres into new designs is a key to attract clients. A perfect looking centre can attract more and more fitness enthusiasts easily. 
   </p>
 
   <p>

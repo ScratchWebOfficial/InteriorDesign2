@@ -92,10 +92,10 @@ const Kids = () => {
       {/* DESCRIPTION SECTION AT BOTTOM */}
       <section className="kids-description">
         <p>
-          Looking for an expert to decorate your kids’ room? Ask an expert like Interiordesignwala
+          Looking for an expert to decorate your kids’ room? Ask an expert like Sahacarah Global Pvt. Ltd.
           to keep your kids flaunt and scrimp on style. When it comes to kids’ room, there are huge
           possibilities on design and decoration. Even though if your kids’ corner has space crunch,
-          our designers would make it brave and magical as you want.Whether it’s a girls’ room, a boys’ bedroom or nursery, we’ve solid experience in designing
+          our designers would make it brave and magical as you want.  Whether it’s a girls’ room, a boys’ bedroom or nursery, we’ve solid experience in designing
           children’s bedroom at its best. If you think that designing kids’ bedroom and then decorating
           it aesthetically is consuming and costly, tell us to do this. We have many inspirations in our
           kitty around your thoughts that help us create amazing rooms from the nursery to the teen bedroom.They will be appealing and would be astoundingly designed as per your expectations. For our team

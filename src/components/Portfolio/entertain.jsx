@@ -92,7 +92,7 @@ const Entertainment = () => {
           contemporary environment throughout each space. Decorative and unique paintings help to transform a ho-hum décor 
           into loads of design. Modern entertainment Room design leaves space for interesting areas. Warm, fairly neutral or 
           cool color shades carry the energy of design that makes entertainment Room design attractive. Modern beauty is an 
-          attractive theme that is essential for unique interesting areas. With Interiordesignwala select attractive lighting 
+          attractive theme that is essential for unique interesting areas. With Sahacarah Global Pvt. Ltd. select attractive lighting 
           accessories, one-of-a-kind accessories and designer-inspired furniture for fashionable impact. The best interesting 
           attractive themes have amazing points of interest and comfortable furniture for a custom scheme of personal elegance 
           of entertainment Room.

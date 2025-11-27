@@ -103,17 +103,17 @@ const Salon = () => {
             Take special note of the luxurious appliances, lighting effects, and artificial ceiling.
         </p>
         <p>
-            Interior Designwala an online interior service provider has created some remarkable virtual salon designs in its 8+ years of services. Our designers work on the key aesthetics of the place and help in growing your business organically.
+            Sahacarah Global Pvt. Ltd. an online interior service provider has created some remarkable virtual salon designs in its 8+ years of services. Our designers work on the key aesthetics of the place and help in growing your business organically.
         </p>
 
 
         <h3>FAQs</h3>
 
         <h4>Q1. How to tour the interiors of your salon interior design online?</h4>
-        <p>3D rendering services of Interior Designwala give the flexibility to tour your interiors online.</p>
+        <p>3D rendering services of Sahacarah Global Pvt. Ltd. give the flexibility to tour your interiors online.</p>
 
         <h4>Q2. How does artificial intelligence in creating virtual salon design help in making a stunning physical salon?</h4>
-        <p>The use of augmented reality in interior design by Interior Designwala facilitates the creation of virtual environments that stimulate real-world surroundings. By using 3D rendering images, you can see the entire location in 360 degrees and observe even the smallest details, like the folds in a curtain or the sheen of a surface material. This allows you to visualize your interior design before it is finished, allowing you to make changes as needed. As a result, the project's actual site execution costs are decreased..</p>
+        <p>The use of augmented reality in interior design by Sahacarah Global Pvt. Ltd. facilitates the creation of virtual environments that stimulate real-world surroundings. By using 3D rendering images, you can see the entire location in 360 degrees and observe even the smallest details, like the folds in a curtain or the sheen of a surface material. This allows you to visualize your interior design before it is finished, allowing you to make changes as needed. As a result, the project's actual site execution costs are decreased..</p>
 
         <h4>Q3. How to create customer-engaging salon interiors?</h4>
         <p>Make a relaxed reception area with a lot of magazines.<br/>

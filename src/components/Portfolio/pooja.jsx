@@ -89,7 +89,7 @@ const PoojaRoom = () => {
           connects your soul and the body. No matter which religion you belong to this place contains
           the most divine vibes in any home. In modern times due to increasing demand for small spaces,
           this space has also shrunken but not the roots. Thus there is an increasing trend of making
-          <strong> pooja rooms in living rooms </strong> and other possible spaces. At Interior Design Wala
+          <strong> pooja rooms in living rooms </strong> and other possible spaces. At Sahacarah Global Pvt. Ltd.
           we keep in mind to give divine aesthetics to this corner.
         </p>
 
@@ -101,7 +101,7 @@ const PoojaRoom = () => {
         <p>Ventilations</p>
 
         <p>
-          When you choose interior design wala, we say yes to customisation. In our land of precious cultures,
+          When you choose Sahacarah Global Pvt. Ltd., we say yes to customisation. In our land of precious cultures,
           we honour every religion, believing that devotion and spirituality can have many faces. Thus, in our
           <strong> pooja room interior </strong> designs, you can choose to customise and create your world
           where you can find a body–soul connection.
@@ -113,7 +113,7 @@ const PoojaRoom = () => {
 
         <h4>Q1. Where can we get the best small pooja room designs online?</h4>
         <p>
-          Interior Design Wala is one of the best interior design solution providers in the industry.
+          Sahacarah Global Pvt. Ltd. is one of the best interior design solution providers in the industry.
         </p>
 
         <h4>Q2. What lights can be used in pooja room interiors?</h4>

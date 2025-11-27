@@ -86,9 +86,9 @@ const Office = () => {
     <br /><br />
     <strong>But are the great interiors affordable too?</strong>
     <br />
-    With Interior Designwala, Yes it’s affordable indeed!! Be it a 
+    With Sahacarah Global Pvt. Ltd., Yes it’s affordable indeed!! Be it a 
     <strong> modern small office interior design </strong> 
-    or exquisite large head offices, at Interiordesignwala consider it done within your budget.
+    or exquisite large head offices, at Sahacarah Global Pvt. Ltd. consider it done within your budget.
   </p>
 
   <h2>Here are some secrets of small office interior design</h2>
@@ -99,7 +99,7 @@ const Office = () => {
   <p>It should connect with the outdoors.</p>
 
   <p>
-    To achieve these goals, Interior Designwala an 
+    To achieve these goals, Sahacarah Global Pvt. Ltd. an 
     <strong> online interior design services </strong> 
     platform work extensively on the technicalities. We create the best space management, 
     Vastu-based designs, modern interior designs, contemporary interior designs and lots more as desired by you. 
@@ -114,16 +114,16 @@ const Office = () => {
 
   <h4>Q1. Which is the best online interior design service for office spaces in India?</h4>
   <p>
-    Interior Designwala gives the best online interior design service if you have a limited budget for office interiors.
+    Sahacarah Global Pvt. Ltd. gives the best online interior design service if you have a limited budget for office interiors.
   </p>
 
   <h4>Q2. What are the prices of a small office interior design?</h4>
   <p>
     Costing of the interiors of a place depends upon the floor plan of the place. However, you can get a free quotation 
-    at Interior Designwala by sharing your floor plan.
+    at Sahacarah Global Pvt. Ltd. by sharing your floor plan.
   </p>
 
-  <h4>Q3. Are the interior designers at Interior Designwala certified?</h4>
+  <h4>Q3. Are the interior designers at Sahacarah Global Pvt. Ltd. certified?</h4>
   <p>
     Yes, they are certified and hold experience of more than 8+ years of exemplary services in design.
   </p>

@@ -88,7 +88,7 @@ const Showroom = () => {
     process the goal of which is to catch attention and impart audience with the creativity 
     to get pregnant of a way of life choice that relates to the development being considered – 
     this is the aim of the shop, to make audience feel that they are part of the idea elicited 
-    by the home. For Interiordesignwala, finishing touches and embellishments must be thoroughly 
+    by the home. For Sahacarah Global Pvt. Ltd., finishing touches and embellishments must be thoroughly 
     thought while doing showroom interior designing. We are aware of the marketplace and have a 
     proven record. We present and understand the particulars of existing interiors.
   </p>
@@ -96,7 +96,7 @@ const Showroom = () => {
   <p>
     Now, if you think that showroom interior would cost you much, you are completely wrong! 
     Although it is true that prices vary based on the place you live and the requirement for 
-    the developers, but still the option is affordable. Interiordesignwala professionals are 
+    the developers, but still the option is affordable. Sahacarah Global Pvt. Ltd. professionals are 
     of great help here. They exactly know how to catch the creativity of the potential customers 
     and so they style the exact residence accordingly increasing the revenue benefit of the exact 
     residence.

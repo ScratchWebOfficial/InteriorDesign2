@@ -99,7 +99,7 @@ const Living = () => {
 <p>
 The living room is the part of the house that connects to all other parts and
 all family members gather there to spend quality time. The living room should
-be pleasing, pleasantly lit, stylish, and soothing. At Interiordesignwala, we
+be pleasing, pleasantly lit, stylish, and soothing. At Sahacarah Global Pvt. Ltd., we
 believe that there are countless numbers of great choices when it comes to
 designing your living area in a modern and stylish way. We, therefore, opt for
 more innovative ways to manage the space in your living area so that the
@@ -110,7 +110,7 @@ and adjusting are some of mostly used trending design themes for living areas.
 A modern living room should never have too much design. However, you can use
 subjective or modern art that is described as firm and geometrical numbers to
 promote the kind of your space. Another idea is to use uncommon decorative
-things such as statues. For Interiordesignwala, it’s important to add a unique
+things such as statues. For Sahacarah Global Pvt. Ltd., it’s important to add a unique
 touch to your living area as per your personal design interest, no matter how
 small the detail might be. When you have to install so many amenities and
 functions within your living area, we have a look through our living room
