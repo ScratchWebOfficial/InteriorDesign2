@@ -43,6 +43,7 @@ import Associates from "./components/Footer/associates";
 import Privacy from "./components/Footer/privacy";
 import Terms from "./components/Footer/terms";
 import Talk from "./components/Footer/talk";
+import Faq from "./components/Footer/faq";
 
 function App() {
 
@@ -111,6 +112,7 @@ function App() {
              <Route path="/privacy-policy" element={<Privacy />}/>
              <Route path="/terms"element={<Terms />}/>
              <Route path="/talk-to-designer"element={<Talk />}/>
+             <Route path="/faq" element={<Faq />}/>
       </Routes>
       <Footer/>
     </Router>
