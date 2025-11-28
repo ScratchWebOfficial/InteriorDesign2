@@ -16,7 +16,7 @@ import Rendering from "./components/Services/Rendering";
 import Preloader from "./components/Preloader/Preloader";
 import Bedroom from "./components/Portfolio/bedroom";
 import Kitchen from "./components/Portfolio/kitchen";
-import Toilet from "./components/Portfolio/Toilet";
+import Toilet from "./components/Portfolio/toilet";
 import Living from "./components/Portfolio/living";
 import Kids from "./components/Portfolio/kids";
 import Office from "./components/Portfolio/office";
@@ -111,7 +111,7 @@ function App() {
              <Route path="/associates" element={<Associates />}/>
              <Route path="/privacy-policy" element={<Privacy />}/>
              <Route path="/terms"element={<Terms />}/>
-             <Route path="/talk-to-designer"element={<Talk />}/>
+             <Route path="/talk-to-designer" element={<Talk />}/>
              <Route path="/faq" element={<Faq />}/>
       </Routes>
       <Footer/>
