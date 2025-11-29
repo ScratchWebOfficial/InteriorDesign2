@@ -26,6 +26,7 @@ const Faq = () => {
   ];
 
   const faqBlock3 = [
+    "How do I get started?",
     "What is the better time to start thinking about interior design?",
     "What all services are included in designing with execution?",
     "What are the procedures you follow for interiors?",
@@ -46,6 +47,7 @@ const Faq = () => {
 
   return (
     <div className="full-wrapper">
+
       {/* UI 1 - HERO BACKGROUND */}
       <section className="hero-section">
         <img src={img1} className="hero-bg" alt="Hero" />
@@ -59,20 +61,52 @@ const Faq = () => {
       {/* UI 2 - MAIN HEADING */}
       <section className="main-heading">
         <h2>Online Interior Designing</h2>
-        <p>Turnkey Projects (Delhi - NCR)</p>
       </section>
 
-      {/* UI 3 - FAQ BLOCKS */}
-      {[faqBlock1, faqBlock2, faqBlock3, faqBlock4].map((block, idx) => (
-        <section className="faq-section" key={idx}>
-          {block.map((q, i) => (
-            <div className="faq-box" key={i}>
-              <p>{q}</p>
-              <div className="faq-icon">?</div>
-            </div>
-          ))}
-        </section>
-      ))}
+      {/* UI 3 - FAQ BLOCK 1 */}
+      <section className="faq-section">
+        {faqBlock1.map((q, i) => (
+          <div className="faq-box" key={i}>
+            <p>{q}</p>
+            <div className="faq-icon">?</div>
+          </div>
+        ))}
+      </section>
+
+      {/* UI 4 - FAQ BLOCK 2 */}
+      <section className="faq-section">
+        {faqBlock2.map((q, i) => (
+          <div className="faq-box" key={i}>
+            <p>{q}</p>
+            <div className="faq-icon">?</div>
+          </div>
+        ))}
+      </section>
+
+      {/* ⭐ NEW CENTER HEADING (Between block 2 & block 3) */}
+      <section className="main-heading">
+        <h2>Designed & Executed</h2>
+      </section>
+
+      {/* UI 5 - FAQ BLOCK 3 */}
+      <section className="faq-section">
+        {faqBlock3.map((q, i) => (
+          <div className="faq-box" key={i}>
+            <p>{q}</p>
+            <div className="faq-icon">?</div>
+          </div>
+        ))}
+      </section>
+
+      {/* UI 6 - FAQ BLOCK 4 */}
+      <section className="faq-section">
+        {faqBlock4.map((q, i) => (
+          <div className="faq-box" key={i}>
+            <p>{q}</p>
+            <div className="faq-icon">?</div>
+          </div>
+        ))}
+      </section>
 
     </div>
   );

@@ -44,6 +44,7 @@ import Privacy from "./components/Footer/privacy";
 import Terms from "./components/Footer/terms";
 import Talk from "./components/Footer/talk";
 import Faq from "./components/Footer/faq";
+import Refer from "./components/Footer/refer";
 
 function App() {
 
@@ -113,6 +114,7 @@ function App() {
              <Route path="/terms"element={<Terms />}/>
              <Route path="/talk-to-designer" element={<Talk />}/>
              <Route path="/faq" element={<Faq />}/>
+             <Route path="/get-quote" element={<Refer />}/>
       </Routes>
       <Footer/>
     </Router>
