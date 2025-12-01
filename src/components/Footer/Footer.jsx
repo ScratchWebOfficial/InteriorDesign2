@@ -92,6 +92,7 @@ const Footer = () => {
             <li onClick={() => goTo("/testimonials")}><span>+</span> Testimonials</li>
             <li onClick={() => goTo("/blog")}><span>+</span> Blog</li>
            
+            <li onClick={() => goTo("/get-quote")}><span>+</span> Refer and Earn</li>
             <li onClick={() => goTo("/contact")}><span>+</span> Contact Us</li>
             <li onClick={() => goTo("/talk-to-designer")}><span>+</span> Talk to Designer</li>
             <li onClick={() => goTo("/payment")}><span>+</span> Make Payment</li>
