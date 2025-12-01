@@ -113,6 +113,7 @@ function App() {
              <Route path="/terms"element={<Terms />}/>
              <Route path="/talk-to-designer" element={<Talk />}/>
              <Route path="/faq" element={<Faq />}/>
+             
       </Routes>
       <Footer/>
     </Router>

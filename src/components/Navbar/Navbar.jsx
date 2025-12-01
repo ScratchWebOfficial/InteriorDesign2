@@ -10,15 +10,11 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      // only close if click is completely outside the navbar
       const clickedInsideNavbar = !!event.target.closest(".navbar");
       if (!clickedInsideNavbar) {
-        // close everything
         setDropdownOpen(null);
         setActiveSubmenu(null);
         setMobileOpen(false);
-        // debug
-        // console.log("Clicked outside navbar -> closed all");
       }
     };
 
@@ -27,7 +23,7 @@ const Navbar = () => {
   }, []);
 
   const toggleDropdown = (menu, e) => {
-    if (e && e.stopPropagation) e.stopPropagation(); // prevent bubbling to document
+    if (e && e.stopPropagation) e.stopPropagation();
     setDropdownOpen((prev) => (prev === menu ? null : menu));
     setActiveSubmenu(null);
   };
@@ -38,14 +34,10 @@ const Navbar = () => {
   };
 
   const toggleMobile = (e) => {
-    // stop the click from reaching document click listener (which could close it instantly)
     if (e && e.stopPropagation) e.stopPropagation();
     setMobileOpen((p) => !p);
-    // close dropdowns when opening mobile to avoid overlap
     setDropdownOpen(null);
     setActiveSubmenu(null);
-    // debug
-    // console.log("toggleMobile ->", !mobileOpen);
   };
 
   const closeMobile = (e) => {
@@ -63,7 +55,6 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* Hamburger button */}
       <button
         type="button"
         className={`hamburger ${mobileOpen ? "open" : ""}`}
@@ -76,11 +67,11 @@ const Navbar = () => {
         <span />
       </button>
 
-      {/* nav-links: use "open" class to match your CSS */}
       <div className={`nav-links ${mobileOpen ? "open" : ""}`}>
         <Link to="/" onClick={closeMobile}>Home</Link>
         <Link to="/about" onClick={closeMobile}>About Us</Link>
 
+        {/* RECENT PROJECTS DROPDOWN */}
         <div className="dropdown">
           <button
             type="button"
@@ -142,6 +133,7 @@ const Navbar = () => {
           )}
         </div>
 
+        {/* OUR SERVICES DROPDOWN */}
         <div className="dropdown">
           <button
             type="button"
@@ -163,122 +155,79 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* ✅ Portfolio Dropdown */}
-<div className="dropdown">
-  <button
-    className="dropdown-btn"
-    onClick={() => toggleDropdown("portfolio")}
-  >
-    Portfolio{" "}
-    <span className={`arrow ${dropdownOpen === "portfolio" ? "up" : "down"}`}>
-      ▼
-    </span>
-  </button>
-
-  {dropdownOpen === "portfolio" && (
-    <div className="dropdown-menu">
-      
-      {/* ⭐ Residential Interior Designs dropdown */}
-      <div
-        className="submenu-item"
-        onClick={() => handleSubmenuToggle("residential")}
-      >
-        <span className="submenu-label">
-          Residential Interior Designs{" "}
-          <span
-            className={`arrow ${
-              activeSubmenu === "residential" ? "up" : "down"
-            }`}
-          >
-            ▶
-          </span>
-        </span>
-
-        {activeSubmenu === "residential" && (
-          <div className="submenu">
-            <Link to="/residential/bedroom">Bedroom Interiors</Link>
-            <Link to="/residential/living">Living Room Interiors</Link>
-            <Link to="/residential/kitchen">Kitchen Interiors </Link>
-            <Link to="/residential/kids">Kids Bedroom Interiors</Link>
-            <Link to="/residential/Toilet">Toilet Interiors</Link>
-          </div>
-        )}
-      </div>
-
-      {/* ⭐ Commercial Interior Designs dropdown */}
-      <div
-        className="submenu-item"
-        onClick={() => handleSubmenuToggle("commercial")}
-      >
-        <span className="submenu-label">
-          Commercial Interior Designs{" "}
-          <span
-            className={`arrow ${
-              activeSubmenu === "commercial" ? "up" : "down"
-            }`}
-          >
-            ▶
-          </span>
-        </span>
-
-        {activeSubmenu === "commercial" && (
-          <div className="submenu">
-            <Link to="/commercial/offices">Office Interiors</Link>
-            <Link to="/commercial/showrooms">Showroom Interiors</Link>
-            <Link to="/commercial/hotel">Hotel Interiors</Link>
-            <Link to="/commercial/hospital">Hospital/Clinic Interiors</Link>
-             <Link to="/commercial/resturant">Resturant Interiors</Link>
-          </div>
-        )}
-      </div>
-
-    </div>
-  )}
-</div>
-        {/* ✅ Other Links */}
-       {/* <Link to="/blog">Blog</Link>*/}
-      {/* ⭐ BLOG DROPDOWN ADDED HERE */}
-       <div
-  className="dropdown"
-  onMouseEnter={() => setDropdownOpen("blog")}
-  onMouseLeave={() => setDropdownOpen(null)}
->
-  <button
-    className="dropdown-btn"
-    onClick={(e) => {
-      e.stopPropagation();
-      closeMobile();
-      // redirect to main blog page
-      window.location.href = "/blog";
-    }}
-  >
-    Blog <span className={`arrow ${dropdownOpen === "blog" ? "up" : "down"}`}>▼</span>
-  </button>
-
-  {dropdownOpen === "blog" && (
-    <div className="dropdown-menu" role="menu">
-      <Link to="/blog/modular-kitchen" onClick={closeMobile}>Modular Kitchen Interior Ideas</Link>
-      <Link to="/blog/home-interior" onClick={closeMobile}>Home Interior Design Ideas</Link>
-      <Link to="/blog/bedroom-design" onClick={closeMobile}>Bedroom Design Ideas</Link>
-      <Link to="/blog/living-room" onClick={closeMobile}>Living Room Design Ideas</Link>
-      <Link to="/blog/dining-room" onClick={closeMobile}>Dining Room Design Ideas</Link>
-      <Link to="/blog/kids-room" onClick={closeMobile}>Kids Bedroom Design Ideas</Link>
-      <Link to="/blog/study-room" onClick={closeMobile}>Study Room Design Ideas</Link>
-      <Link to="/blog/home-decor" onClick={closeMobile}>Home Decor Ideas</Link>
-      <Link to="/blog/design-tours" onClick={closeMobile}>Sahacarah Design Tours</Link>
-      <Link to="/blog/updates" onClick={closeMobile}>Sahacarah Updates</Link>
-    </div>
-  )}
-</div>
-
-
-{/*}
+        {/* PORTFOLIO DROPDOWN */}
         <div className="dropdown">
           <button
+            type="button"
+            className="dropdown-btn"
+            onClick={(e) => toggleDropdown("portfolio", e)}
+            aria-haspopup="true"
+            aria-expanded={dropdownOpen === "portfolio"}
+          >
+            Portfolio{" "}
+            <span className={`arrow ${dropdownOpen === "portfolio" ? "up" : "down"}`}>▼</span>
+          </button>
+
+          {dropdownOpen === "portfolio" && (
+            <div className="dropdown-menu" role="menu" onClick={(e) => e.stopPropagation()}>
+              <div className="submenu-item">
+                <button
+                  type="button"
+                  className="submenu-label"
+                  onClick={(e) => handleSubmenuToggle("residential", e)}
+                  aria-expanded={activeSubmenu === "residential"}
+                >
+                  Residential Interior Designs{" "}
+                  <span className={`arrow ${activeSubmenu === "residential" ? "up" : "down"}`}>▶</span>
+                </button>
+
+                {activeSubmenu === "residential" && (
+                  <div className="submenu" role="menu">
+                    <Link to="/residential/bedroom" onClick={closeMobile}>Bedroom Interiors</Link>
+                    <Link to="/residential/living" onClick={closeMobile}>Living Room Interiors</Link>
+                    <Link to="/residential/kitchen" onClick={closeMobile}>Kitchen Interiors</Link>
+                    <Link to="/residential/kids" onClick={closeMobile}>Kids Bedroom Interiors</Link>
+                    <Link to="/residential/Toilet" onClick={closeMobile}>Toilet Interiors</Link>
+                  </div>
+                )}
+              </div>
+
+              <div className="submenu-item">
+                <button
+                  type="button"
+                  className="submenu-label"
+                  onClick={(e) => handleSubmenuToggle("commercial", e)}
+                  aria-expanded={activeSubmenu === "commercial"}
+                >
+                  Commercial Interior Designs{" "}
+                  <span className={`arrow ${activeSubmenu === "commercial" ? "up" : "down"}`}>▶</span>
+                </button>
+
+                {activeSubmenu === "commercial" && (
+                  <div className="submenu" role="menu">
+                    <Link to="/commercial/offices" onClick={closeMobile}>Office Interiors</Link>
+                    <Link to="/commercial/showrooms" onClick={closeMobile}>Showroom Interiors</Link>
+                    <Link to="/commercial/hotel" onClick={closeMobile}>Hotel Interiors</Link>
+                    <Link to="/commercial/hospital" onClick={closeMobile}>Hospital/Clinic Interiors</Link>
+                    <Link to="/commercial/resturant" onClick={closeMobile}>Resturant Interiors</Link>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* BLOG DROPDOWN */}
+        <div className="dropdown">
+          <button
+            type="button"
             className="dropdown-btn"
             onClick={(e) => toggleDropdown("blog", e)}
+            aria-haspopup="true"
+            aria-expanded={dropdownOpen === "blog"}
           >
-            Blog <span className={`arrow ${dropdownOpen === "blog" ? "up" : "down"}`}>▼</span>
+            Blog{" "}
+            <span className={`arrow ${dropdownOpen === "blog" ? "up" : "down"}`}>▼</span>
           </button>
 
           {dropdownOpen === "blog" && (
@@ -296,9 +245,8 @@ const Navbar = () => {
             </div>
           )}
         </div>
-*/}
 
-        <Link to="/contact">Contact</Link>
+        <Link to="/contact" onClick={closeMobile}>Contact</Link>
         <Link to="/login" onClick={closeMobile}>
           <button className="quote-btn login">Login</button>
         </Link>
