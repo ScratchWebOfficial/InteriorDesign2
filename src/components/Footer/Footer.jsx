@@ -95,7 +95,7 @@ const Footer = () => {
             <li onClick={() => goTo("/get-quote")}><span>+</span> Refer and Earn</li>
             <li onClick={() => goTo("/contact")}><span>+</span> Contact Us</li>
             <li onClick={() => goTo("/talk-to-designer")}><span>+</span> Talk to Designer</li>
-            <li onClick={() => goTo("/payment")}><span>+</span> Make Payment</li>
+            <li onClick={() => goTo("/payment")}><span>+</span> Interior Design Tips</li>
           </ul>
         </div>
 
