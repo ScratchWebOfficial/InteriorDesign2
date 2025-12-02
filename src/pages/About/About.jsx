@@ -167,7 +167,7 @@ const About = () => {
         <div className="team-content">
           <div className="team-text">
             <h2 className="team-title">TEAM BEHIND</h2>
-            <h3 className="team-subtitle">BEAUTIFUL INTERIORS</h3>
+            <h3 className="team-subtitle">BEAUTIFUL INTERIOR</h3>
           </div>
 
           <div className="team-grid">
