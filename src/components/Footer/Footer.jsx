@@ -109,6 +109,7 @@ const Footer = () => {
             <li onClick={() => goTo("/site-map")}><span>+</span> Site Map</li>
             <li onClick={() => goTo("/vastu")}><span>+</span> Vastu for Interior</li>
             <li onClick={() => goTo("/turnkey-projects")}><span>+</span> Services</li>
+            <li onClick={() => goTo("/disclaimer")}><span>+</span> Disclaimer</li>
             <li onClick={() => goTo("/privacy-policy")}><span>+</span> Privacy Policy</li>
             <li onClick={() => goTo("/terms")}><span>+</span> Terms & Conditions</li>
           </ul>

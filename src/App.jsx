@@ -46,8 +46,9 @@ import Talk from "./components/Footer/talk";
 import Faq from "./components/Footer/faq";
 import Refer from "./components/Footer/refer";
 import Use from"./components/Footer/use";
-import Make from"./components/Footer/make";
 import Design from"./components/Footer/design";
+import Disclaimer from"./components/Footer/disclaimer";
+
 
 
 function App() {
@@ -121,9 +122,8 @@ function App() {
              
              <Route path="/get-quote" element={<Refer />}/>
              <Route path="/testimonials" element={<Use />}/>
-             <Route path="/make" element={<Make />}/>
              <Route path="/payment" element={<Design />}/>
-
+             <Route path="/disclaimer" element={<Disclaimer />}/>
 
       </Routes>
       <Footer/>
