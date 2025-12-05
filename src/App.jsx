@@ -48,6 +48,7 @@ import Refer from "./components/Footer/refer";
 import Use from"./components/Footer/use";
 import Design from"./components/Footer/design";
 import Disclaimer from"./components/Footer/disclaimer";
+import Join from"./components/Footer/join";
 
 
 
@@ -124,6 +125,7 @@ function App() {
              <Route path="/testimonials" element={<Use />}/>
              <Route path="/payment" element={<Design />}/>
              <Route path="/disclaimer" element={<Disclaimer />}/>
+             <Route path="/joinus" element={<Join />}/>
 
       </Routes>
       <Footer/>

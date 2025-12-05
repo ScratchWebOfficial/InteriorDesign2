@@ -1,0 +1,123 @@
+/* Full Page Container */
+.page-container {
+  width: 100%;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Jobs Section */
+.jobs-section {
+  width: 100%;
+  padding: 40px 80px;
+}
+
+.jobs-section h1 {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.filters select {
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #fff;
+}
+
+/* Table */
+.jobs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.jobs-table th {
+  text-align: left;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 2px solid #ececec;
+}
+
+.jobs-table td {
+  padding: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 16px;
+}
+
+.view-btn {
+  padding: 10px 20px;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Talent Pool Section */
+.talent-pool {
+  background: #f7f7f7;
+  padding: 60px 80px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.talent-pool h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.talent-pool p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.submit-btn {
+  padding: 14px 20px;
+  background: blue;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.jobs-table td:first-child {
+  color: #007bff;
+  font-weight: 500;
+}
+.submit-btn {
+  background: #1a56db;
+  color: #fff;
+  padding: 6px 55px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.talent-pool {
+  background: #dbe6f5;
+  text-align: center;
+  padding: 50px 20px;
+}
