@@ -139,7 +139,7 @@ const Footer = () => {
           <div className="footer-card-icon">
             <FaGlobe />
           </div>
-          <p>E-53 Ground Floor, Sector-62,<br />Noida</p>
+          <p>E-53 Ground Floor, Sector-63,<br />Noida</p>
         </div>
 
         <div className="footer-card">
