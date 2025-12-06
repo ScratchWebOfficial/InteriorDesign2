@@ -7,10 +7,10 @@ import joinus from "../../assets/joinus.jpg";
 export default function JoinUsPage() {
   const navigate = useNavigate();
 
-  const goToJob = (role) => {
-    const route = "/jobs/" + role.toLowerCase().replace(/[\s()]/g, "-");
-    navigate(route);
-  };
+  const goToJob = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  navigate("/jobdetails");
+};
 
   return (
     <div className="page-container">
@@ -48,7 +48,7 @@ export default function JoinUsPage() {
               <td>Design Consultant</td>
               <td>Mysore</td>
               <td>Design</td>
-              <td><button className="view-btn" onClick={() => goToJob("Design Consultant")}>View Job</button></td>
+              <td><button className="view-btn" onClick={goToJob}>View Job</button></td>
             </tr>
 
             <tr>

@@ -126,7 +126,7 @@ function App() {
              <Route path="/payment" element={<Design />}/>
              <Route path="/disclaimer" element={<Disclaimer />}/>
              <Route path="/joinus" element={<Join />}/>
-             <Route path="/Design Consultant" element={<JobDetails />}/>
+             <Route path="/jobdetails" element={<JobDetails />} />
 
       </Routes>
       <Footer/>
