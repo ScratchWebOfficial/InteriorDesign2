@@ -1,0 +1,89 @@
+.jobdetails-container {
+  width: 100%;
+  padding: 40px 100px;
+  font-family: serif;
+  color: #1a1a1a;
+}
+
+/* Header */
+.jobdetails-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jobdetails-header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.jobdetails-tags {
+  display: flex;
+  gap: 25px;
+  margin: 10px 0;
+}
+
+.tag {
+  font-size: 18px;
+  color: #4a4a4a;
+}
+
+.apply-btn-top {
+  background: #1a56db;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Sections */
+.job-section {
+  margin-top: 40px;
+}
+
+.job-section h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.job-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.job-section ul {
+  margin-left: 20px;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+/* Bottom Apply Button */
+.apply-btn-bottom {
+  background: #1a56db;
+  color: white;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  font-size: 22px;
+}
+
+.social-icons i {
+  cursor: pointer;
+  color: #3a3a3a;
+}
+
+.social-icons i:hover {
+  color: #1a56db;
+}

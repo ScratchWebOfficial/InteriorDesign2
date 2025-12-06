@@ -49,7 +49,7 @@ import Use from"./components/Footer/use";
 import Design from"./components/Footer/design";
 import Disclaimer from"./components/Footer/disclaimer";
 import Join from"./components/Footer/join";
-
+import JobDetails from "./components/Footer/JobDetails";
 
 
 function App() {
@@ -126,6 +126,7 @@ function App() {
              <Route path="/payment" element={<Design />}/>
              <Route path="/disclaimer" element={<Disclaimer />}/>
              <Route path="/joinus" element={<Join />}/>
+             <Route path="/Design Consultant" element={<JobDetails />}/>
 
       </Routes>
       <Footer/>
